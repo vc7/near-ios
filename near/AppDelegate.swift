@@ -18,6 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
+        let homeViewController = NRHomeViewController()
+        self.window?.rootViewController = homeViewController
+        
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 }

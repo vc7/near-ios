@@ -2,8 +2,7 @@ target 'near' do
   use_frameworks!
 
 	# General Usage
-	pod 'Alamofire'
-	pod 'SwiftyJSON'
+	pod 'LHNetworkBase'
 
   target 'nearTests' do
     inherit! :search_paths
