@@ -19,6 +19,6 @@ extension NRNLocation: LHNJSONDecodable {
     init?(json: JSON) {
         self.city = NRNCity(json: json["city"])
         self.temperature = NRNTemperature(json: json["temperature"])
-        self.nearByStations = json["nearby_stations"].arrayObject as? [String]
+        self.nearByStations = json["nearby_stations"].array?.filter({ $0.string != nil }).map({ $0.string! })
     }
 }

@@ -17,7 +17,7 @@ enum NRNLocationRoute: LHNetworkRouteType {
     
     // MARK: - LHNetworkRouteType
     
-    var rootEndpoint: String { return "location/" }
+    var rootEndpoint: String { return "location" }
     var mainEndpoint: String {
         switch self {
         case .fetchLocationInformation:
