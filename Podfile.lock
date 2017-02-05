@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.3.0)
+  - LHNetworkBase (0.0.3):
+    - Alamofire
+    - SwiftyJSON
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - LHNetworkBase
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  LHNetworkBase: ce691ce4865d1654c6c9d29c5daa546831c63d56
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 55c943b96d8325d3c0828e1e5f6fc315487646e6
+
+COCOAPODS: 1.2.0
