@@ -1,0 +1,6 @@
+framework module Pods_nearTests {
+  umbrella header "Pods-nearTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
