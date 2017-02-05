@@ -108,7 +108,7 @@
                             </subviews>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="QGK-4x-8iz" secondAttribute="bottom" constant="15" id="4Kq-aH-6kd"/>
                         <constraint firstItem="QGK-4x-8iz" firstAttribute="top" secondItem="wbv-Ef-7pQ" secondAttribute="top" constant="50" id="8or-L5-MvD"/>
@@ -122,7 +122,7 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.9137254901960784" green="0.92156862745098034" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="NaV-dj-Fn8" secondAttribute="trailing" id="Npn-yX-Lfa"/>
                 <constraint firstItem="NaV-dj-Fn8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TuD-Ox-6qd"/>
