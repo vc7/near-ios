@@ -17,6 +17,8 @@
 		BF2AB01D1E45CD3300A2C7D0 /* NRHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2AB01B1E45CD3300A2C7D0 /* NRHomeViewController.xib */; };
 		BF2AB0211E4700E200A2C7D0 /* NRHomeGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB01F1E4700E200A2C7D0 /* NRHomeGalleryCell.swift */; };
 		BF2AB0221E4700E200A2C7D0 /* NRHomeGalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2AB0201E4700E200A2C7D0 /* NRHomeGalleryCell.xib */; };
+		BF2AB0251E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB0231E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.swift */; };
+		BF2AB0261E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2AB0241E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		BF2AB01B1E45CD3300A2C7D0 /* NRHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRHomeViewController.xib; sourceTree = "<group>"; };
 		BF2AB01F1E4700E200A2C7D0 /* NRHomeGalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRHomeGalleryCell.swift; sourceTree = "<group>"; };
 		BF2AB0201E4700E200A2C7D0 /* NRHomeGalleryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRHomeGalleryCell.xib; sourceTree = "<group>"; };
+		BF2AB0231E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRHomeGalleryPhotoCell.swift; sourceTree = "<group>"; };
+		BF2AB0241E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRHomeGalleryPhotoCell.xib; sourceTree = "<group>"; };
 		C8A0D4E0953C27B78246EEC1 /* Pods-near.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-near.debug.xcconfig"; path = "Pods/Target Support Files/Pods-near/Pods-near.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +138,8 @@
 			children = (
 				BF2AB01F1E4700E200A2C7D0 /* NRHomeGalleryCell.swift */,
 				BF2AB0201E4700E200A2C7D0 /* NRHomeGalleryCell.xib */,
+				BF2AB0231E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.swift */,
+				BF2AB0241E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2AB0261E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.xib in Resources */,
 				BF2AB01D1E45CD3300A2C7D0 /* NRHomeViewController.xib in Resources */,
 				BF2AAFD71E44BD7100A2C7D0 /* LaunchScreen.storyboard in Resources */,
 				BF2AAFD41E44BD7100A2C7D0 /* Assets.xcassets in Resources */,
@@ -365,6 +372,7 @@
 			files = (
 				BF2AAFCD1E44BD7100A2C7D0 /* AppDelegate.swift in Sources */,
 				BF2AB01C1E45CD3300A2C7D0 /* NRHomeViewController.swift in Sources */,
+				BF2AB0251E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.swift in Sources */,
 				BF2AB0211E4700E200A2C7D0 /* NRHomeGalleryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
