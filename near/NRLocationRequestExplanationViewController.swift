@@ -16,6 +16,19 @@ class NRLocationRequestExplanationViewController: UIViewController {
 
     weak var delegate: NRLocationRequestExplanationViewControllerDelegate?
     
+    @IBOutlet private weak var dialogView: UIView! {
+        didSet {
+            dialogView.layer.cornerRadius = 4
+            dialogView.clipsToBounds = true
+        }
+    }
+    @IBOutlet private weak var confirmButton: UIView! {
+        didSet {
+            confirmButton.layer.cornerRadius = 4
+            confirmButton.clipsToBounds = true
+        }
+    }
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
