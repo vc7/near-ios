@@ -21,6 +21,10 @@
 		BF2AB0261E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2AB0241E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.xib */; };
 		BF2AB0291E47112100A2C7D0 /* NRHomeSpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB0271E47112100A2C7D0 /* NRHomeSpotCell.swift */; };
 		BF2AB02A1E47112100A2C7D0 /* NRHomeSpotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2AB0281E47112100A2C7D0 /* NRHomeSpotCell.xib */; };
+		BFB28E671E4732A4006265E7 /* NRPreparingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E651E4732A4006265E7 /* NRPreparingViewController.swift */; };
+		BFB28E681E4732A4006265E7 /* NRPreparingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB28E661E4732A4006265E7 /* NRPreparingViewController.xib */; };
+		BFB28E6B1E47361B006265E7 /* NRLocationRequestExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E691E47361B006265E7 /* NRLocationRequestExplanationViewController.swift */; };
+		BFB28E6C1E47361B006265E7 /* NRLocationRequestExplanationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB28E6A1E47361B006265E7 /* NRLocationRequestExplanationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		BF2AB0241E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRHomeGalleryPhotoCell.xib; sourceTree = "<group>"; };
 		BF2AB0271E47112100A2C7D0 /* NRHomeSpotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRHomeSpotCell.swift; sourceTree = "<group>"; };
 		BF2AB0281E47112100A2C7D0 /* NRHomeSpotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRHomeSpotCell.xib; sourceTree = "<group>"; };
+		BFB28E651E4732A4006265E7 /* NRPreparingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRPreparingViewController.swift; sourceTree = "<group>"; };
+		BFB28E661E4732A4006265E7 /* NRPreparingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRPreparingViewController.xib; sourceTree = "<group>"; };
+		BFB28E691E47361B006265E7 /* NRLocationRequestExplanationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRLocationRequestExplanationViewController.swift; sourceTree = "<group>"; };
+		BFB28E6A1E47361B006265E7 /* NRLocationRequestExplanationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRLocationRequestExplanationViewController.xib; sourceTree = "<group>"; };
 		C8A0D4E0953C27B78246EEC1 /* Pods-near.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-near.debug.xcconfig"; path = "Pods/Target Support Files/Pods-near/Pods-near.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +139,10 @@
 		BF2AAFED1E44BD9900A2C7D0 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BFB28E651E4732A4006265E7 /* NRPreparingViewController.swift */,
+				BFB28E661E4732A4006265E7 /* NRPreparingViewController.xib */,
+				BFB28E691E47361B006265E7 /* NRLocationRequestExplanationViewController.swift */,
+				BFB28E6A1E47361B006265E7 /* NRLocationRequestExplanationViewController.xib */,
 				BF2AB01A1E45CD3300A2C7D0 /* NRHomeViewController.swift */,
 				BF2AB01B1E45CD3300A2C7D0 /* NRHomeViewController.xib */,
 			);
@@ -264,9 +276,11 @@
 				BF2AB02A1E47112100A2C7D0 /* NRHomeSpotCell.xib in Resources */,
 				BF2AB0261E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.xib in Resources */,
 				BF2AB01D1E45CD3300A2C7D0 /* NRHomeViewController.xib in Resources */,
+				BFB28E6C1E47361B006265E7 /* NRLocationRequestExplanationViewController.xib in Resources */,
 				BF2AAFD71E44BD7100A2C7D0 /* LaunchScreen.storyboard in Resources */,
 				BF2AAFD41E44BD7100A2C7D0 /* Assets.xcassets in Resources */,
 				BF2AB0221E4700E200A2C7D0 /* NRHomeGalleryCell.xib in Resources */,
+				BFB28E681E4732A4006265E7 /* NRPreparingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +396,8 @@
 				BF2AB01C1E45CD3300A2C7D0 /* NRHomeViewController.swift in Sources */,
 				BF2AB0251E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.swift in Sources */,
 				BF2AB0211E4700E200A2C7D0 /* NRHomeGalleryCell.swift in Sources */,
+				BFB28E671E4732A4006265E7 /* NRPreparingViewController.swift in Sources */,
+				BFB28E6B1E47361B006265E7 /* NRLocationRequestExplanationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
