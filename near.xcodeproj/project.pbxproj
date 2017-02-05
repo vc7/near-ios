@@ -27,6 +27,8 @@
 		BFB28E6F1E475FC2006265E7 /* NRNetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E6E1E475FC2006265E7 /* NRNetworkConfiguration.swift */; };
 		BFB28E721E47634A006265E7 /* NRNetworkConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E711E47634A006265E7 /* NRNetworkConfigurationTests.swift */; };
 		BFB28E731E476369006265E7 /* NRNetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E6E1E475FC2006265E7 /* NRNetworkConfiguration.swift */; };
+		BFB28E751E476415006265E7 /* NRNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E741E476415006265E7 /* NRNetworkClient.swift */; };
+		BFB28E761E476415006265E7 /* NRNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E741E476415006265E7 /* NRNetworkClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,7 @@
 		BFB28E6A1E47361B006265E7 /* NRLocationRequestExplanationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRLocationRequestExplanationViewController.xib; sourceTree = "<group>"; };
 		BFB28E6E1E475FC2006265E7 /* NRNetworkConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNetworkConfiguration.swift; sourceTree = "<group>"; };
 		BFB28E711E47634A006265E7 /* NRNetworkConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNetworkConfigurationTests.swift; sourceTree = "<group>"; };
+		BFB28E741E476415006265E7 /* NRNetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNetworkClient.swift; sourceTree = "<group>"; };
 		C8A0D4E0953C27B78246EEC1 /* Pods-near.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-near.debug.xcconfig"; path = "Pods/Target Support Files/Pods-near/Pods-near.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				BFB28E6E1E475FC2006265E7 /* NRNetworkConfiguration.swift */,
+				BFB28E741E476415006265E7 /* NRNetworkClient.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -413,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF2AAFCD1E44BD7100A2C7D0 /* AppDelegate.swift in Sources */,
+				BFB28E751E476415006265E7 /* NRNetworkClient.swift in Sources */,
 				BFB28E6F1E475FC2006265E7 /* NRNetworkConfiguration.swift in Sources */,
 				BF2AB0291E47112100A2C7D0 /* NRHomeSpotCell.swift in Sources */,
 				BF2AB01C1E45CD3300A2C7D0 /* NRHomeViewController.swift in Sources */,
@@ -428,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFB28E721E47634A006265E7 /* NRNetworkConfigurationTests.swift in Sources */,
+				BFB28E761E476415006265E7 /* NRNetworkClient.swift in Sources */,
 				BFB28E731E476369006265E7 /* NRNetworkConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
