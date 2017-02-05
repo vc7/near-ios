@@ -54,6 +54,16 @@ extension NRHomeViewController: UITableViewDataSource {
 
 extension NRHomeViewController: UITableViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        // TODO: Moving the information HUD
+        let contentOffsetY = scrollView.contentOffset.y
+        if contentOffsetY < -self.locationInformationHUDHeight {
+            self.locationInformationHUDTopConstraint.constant = 0
+            self.locationInformationHUD.alpha = 1
+        } else if contentOffsetY > 0 {
+            self.locationInformationHUDTopConstraint.constant = self.locationInformationHUDHeight
+            self.locationInformationHUD.alpha = 0
+        } else {
+            self.locationInformationHUDTopConstraint.constant = (-self.locationInformationHUDHeight - contentOffsetY) / 2
+            self.locationInformationHUD.alpha = (-contentOffsetY) / self.locationInformationHUDHeight
+        }
     }
 }
