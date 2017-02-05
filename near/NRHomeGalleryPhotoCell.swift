@@ -11,7 +11,7 @@ import UIKit
 /// The cell class to display a single photo in `NHRHomeGallery`'s collection view.
 class NRHomeGalleryPhotoCell: UICollectionViewCell {
 
-    /// The default ideal height for the instance of `NRHomeGalleryCell`
+    /// The default ideal height for the instance of `NRHomeGalleryPhotoCell`
     static let defaultSize: CGSize = CGSize(width: 150.0, height: 185.0)
     
     @IBOutlet internal weak var photoImageView: UIImageView!

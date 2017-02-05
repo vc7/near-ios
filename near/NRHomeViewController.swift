@@ -8,6 +8,11 @@
 
 import UIKit
 
+fileprivate enum NRHomeTableViewSection: Int {
+    case gallery = 0
+    case spots = 1
+}
+
 class NRHomeViewController: UIViewController {
     
     /// The main table view to hold data
@@ -44,16 +49,43 @@ class NRHomeViewController: UIViewController {
     }
 }
 
+// MARK: - UITableViewDataSource
 extension NRHomeViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        guard let currentSection = NRHomeTableViewSection(rawValue: section) else {
+            return 0
+        }
+        
+        switch currentSection {
+        case .gallery:
+            return 1
+        case .spots:
+            // TODO: change to real value
+            return 5
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return self.galleryCell
+        guard let currentSection = NRHomeTableViewSection(rawValue: indexPath.section) else {
+            return UITableViewCell()
+        }
+        
+        switch currentSection {
+        case .gallery:
+            return self.galleryCell
+        case .spots:
+            // TODO: change to real instance
+            return UITableViewCell()
+        }
     }
 }
 
+// MARK: - UITableViewDelegate
 extension NRHomeViewController: UITableViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let contentOffsetY = scrollView.contentOffset.y
