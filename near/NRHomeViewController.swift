@@ -24,6 +24,8 @@ class NRHomeViewController: UIViewController {
     }
     internal var locationInformationHUDHeight: CGFloat = 0
     
+    internal let galleryCell = Bundle.main.loadNibNamed("NRHomeGalleryCell", owner: nil, options: nil)?.first as? NRHomeGalleryCell ?? NRHomeGalleryCell()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,11 +46,11 @@ class NRHomeViewController: UIViewController {
 
 extension NRHomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        return self.galleryCell
     }
 }
 
@@ -65,5 +67,9 @@ extension NRHomeViewController: UITableViewDelegate {
             self.locationInformationHUDTopConstraint.constant = (-self.locationInformationHUDHeight - contentOffsetY) / 2
             self.locationInformationHUD.alpha = (-contentOffsetY) / self.locationInformationHUDHeight
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return NRHomeGalleryCell.defaultHeight
     }
 }

@@ -15,6 +15,8 @@
 		BF2AAFE21E44BD7100A2C7D0 /* nearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AAFE11E44BD7100A2C7D0 /* nearTests.swift */; };
 		BF2AB01C1E45CD3300A2C7D0 /* NRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB01A1E45CD3300A2C7D0 /* NRHomeViewController.swift */; };
 		BF2AB01D1E45CD3300A2C7D0 /* NRHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2AB01B1E45CD3300A2C7D0 /* NRHomeViewController.xib */; };
+		BF2AB0211E4700E200A2C7D0 /* NRHomeGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB01F1E4700E200A2C7D0 /* NRHomeGalleryCell.swift */; };
+		BF2AB0221E4700E200A2C7D0 /* NRHomeGalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2AB0201E4700E200A2C7D0 /* NRHomeGalleryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		BF2AAFE31E44BD7100A2C7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2AB01A1E45CD3300A2C7D0 /* NRHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRHomeViewController.swift; sourceTree = "<group>"; };
 		BF2AB01B1E45CD3300A2C7D0 /* NRHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRHomeViewController.xib; sourceTree = "<group>"; };
+		BF2AB01F1E4700E200A2C7D0 /* NRHomeGalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRHomeGalleryCell.swift; sourceTree = "<group>"; };
+		BF2AB0201E4700E200A2C7D0 /* NRHomeGalleryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRHomeGalleryCell.xib; sourceTree = "<group>"; };
 		C8A0D4E0953C27B78246EEC1 /* Pods-near.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-near.debug.xcconfig"; path = "Pods/Target Support Files/Pods-near/Pods-near.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +95,7 @@
 			children = (
 				BF2AAFEC1E44BD8300A2C7D0 /* Application */,
 				BF2AAFED1E44BD9900A2C7D0 /* View Controllers */,
+				BF2AB01E1E47009500A2C7D0 /* Views */,
 			);
 			path = near;
 			sourceTree = "<group>";
@@ -122,6 +127,15 @@
 				BF2AB01B1E45CD3300A2C7D0 /* NRHomeViewController.xib */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BF2AB01E1E47009500A2C7D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF2AB01F1E4700E200A2C7D0 /* NRHomeGalleryCell.swift */,
+				BF2AB0201E4700E200A2C7D0 /* NRHomeGalleryCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		C82608EE7B03A6E8BC70B08A /* Frameworks */ = {
@@ -238,6 +252,7 @@
 				BF2AB01D1E45CD3300A2C7D0 /* NRHomeViewController.xib in Resources */,
 				BF2AAFD71E44BD7100A2C7D0 /* LaunchScreen.storyboard in Resources */,
 				BF2AAFD41E44BD7100A2C7D0 /* Assets.xcassets in Resources */,
+				BF2AB0221E4700E200A2C7D0 /* NRHomeGalleryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +365,7 @@
 			files = (
 				BF2AAFCD1E44BD7100A2C7D0 /* AppDelegate.swift in Sources */,
 				BF2AB01C1E45CD3300A2C7D0 /* NRHomeViewController.swift in Sources */,
+				BF2AB0211E4700E200A2C7D0 /* NRHomeGalleryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
