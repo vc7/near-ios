@@ -8,6 +8,8 @@
 
 import UIKit
 
+fileprivate let kNRHomeSpotCellIdentifier = "NRHomeSpotCellIdentifier"
+
 fileprivate enum NRHomeTableViewSection: Int {
     case gallery = 0
     case spots = 1
@@ -36,9 +38,10 @@ class NRHomeViewController: UIViewController {
         
         self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(self.locationInformationHUDHeightConstraint.constant, 0, 0, 0)
         self.tableView.contentInset = UIEdgeInsetsMake(self.locationInformationHUDHeightConstraint.constant, 0, 0, 0)
-        
         self.tableView.separatorStyle = .none
         self.tableView.tableFooterView = UIView()
+        
+        self.tableView.register(UINib.init(nibName: "NRHomeSpotCell", bundle: nil), forCellReuseIdentifier: kNRHomeSpotCellIdentifier)
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -79,14 +82,17 @@ extension NRHomeViewController: UITableViewDataSource {
         case .gallery:
             return self.galleryCell
         case .spots:
-            // TODO: change to real instance
-            return UITableViewCell()
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: kNRHomeSpotCellIdentifier, for: indexPath) as! NRHomeSpotCell
+            
+            return cell
         }
     }
 }
 
 // MARK: - UITableViewDelegate
 extension NRHomeViewController: UITableViewDelegate {
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let contentOffsetY = scrollView.contentOffset.y
         if contentOffsetY < -self.locationInformationHUDHeight {
@@ -102,6 +108,15 @@ extension NRHomeViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return NRHomeGalleryCell.defaultHeight
+        guard let currentSection = NRHomeTableViewSection(rawValue: indexPath.section) else {
+            return 0
+        }
+        
+        switch currentSection {
+        case .gallery:
+            return NRHomeGalleryCell.defaultHeight
+        case .spots:
+            return NRHomeSpotCell.defaultHeight
+        }
     }
 }
