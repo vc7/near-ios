@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import CoreLocation
 
 class NRPreparingViewController: UIViewController {
     
-    lazy internal var locationManager = CLLocationManager()
+    lazy internal var locationManagementCenter = NRLocationManagementCenter.default
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,20 +20,12 @@ class NRPreparingViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        switch CLLocationManager.authorizationStatus() {
-        case .notDetermined:
+        if self.locationManagementCenter.shouldDeterminAuthorizationStatus {
             let viewController = NRLocationRequestExplanationViewController()
             viewController.delegate = self
             self.present(viewController, animated: true, completion: nil)
-            return
-        case .authorizedWhenInUse:
-            self.presentHomeViewController()
-            break
-        case .denied, .restricted:
-            self.presentMessageViewController()
-            break
-        default:
-            return
+        } else {
+            self.locationManagementCenter.processCurrentStatus()
         }
     }
 
@@ -44,33 +35,11 @@ class NRPreparingViewController: UIViewController {
     }
 }
 
-// MARK: - CLLocationManagerDelegate
-extension NRPreparingViewController: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        switch status {
-        case .authorizedWhenInUse:
-            self.presentHomeViewController()
-            break
-        case .denied, .restricted:
-            self.presentMessageViewController()
-            break
-        default:
-            break
-        }
-    }
-}
-
 // MARK: - NRLocationRequestExplanationViewControllerDelegate
 extension NRPreparingViewController: NRLocationRequestExplanationViewControllerDelegate {
     func didConfirmInExplanationViewController(_ explanationViewController: NRLocationRequestExplanationViewController) {
         explanationViewController.dismiss(animated: true) {
-            if !CLLocationManager.locationServicesEnabled() {
-                self.presentMessageViewController()
-                return
-            }
-            
-            self.locationManager.delegate = self
-            self.locationManager.requestWhenInUseAuthorization()
+            self.locationManagementCenter.requestAuthorization()
         }
     }
 }
