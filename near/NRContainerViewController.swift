@@ -80,8 +80,10 @@ extension NRContainerViewController {
                 self.status = .normal
             } else if viewController.isKind(of: NRPreparingViewController.self) {
                 self.status = .preparing
-            } else {
+            } else if viewController.isKind(of: NRMessageViewController.self) {
                 self.status = .error
+            } else {
+                self.status = .default
             }
         } else {
             self.status = .default
