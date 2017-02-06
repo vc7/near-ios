@@ -17,6 +17,8 @@ fileprivate enum NRHomeTableViewSection: Int {
 
 class NRHomeViewController: UIViewController {
     
+    lazy internal var requestsManager = NRNRequestsManager.default
+    
     /// The main table view to hold data
     @IBOutlet internal weak var tableView: UITableView!
     
@@ -33,8 +35,20 @@ class NRHomeViewController: UIViewController {
     
     internal let galleryCell = Bundle.main.loadNibNamed("NRHomeGalleryCell", owner: nil, options: nil)?.first as? NRHomeGalleryCell ?? NRHomeGalleryCell()
     
+    // MARK: - Data
+    
+    internal var locationInformation: NRNLocation?
+    internal var photos: [NRNPhoto]?
+    internal var spots: [NRNSpot]?
+    
+    // MARK: - Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.locationInformation = self.requestsManager.locationInformation
+        self.photos = self.requestsManager.photos
+        self.spots = self.requestsManager.spots
         
         self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(self.locationInformationHUDHeightConstraint.constant, 0, 0, 0)
         self.tableView.contentInset = UIEdgeInsetsMake(self.locationInformationHUDHeightConstraint.constant, 0, 0, 0)
@@ -68,8 +82,12 @@ extension NRHomeViewController: UITableViewDataSource {
         case .gallery:
             return 1
         case .spots:
-            // TODO: change to real value
-            return 5
+            if let spots = self.spots {
+                return spots.count
+            } else {
+                // TODO: Add placeholder view
+                return 0
+            }
         }
     }
     
@@ -80,7 +98,13 @@ extension NRHomeViewController: UITableViewDataSource {
         
         switch currentSection {
         case .gallery:
-            return self.galleryCell
+            if let photos = self.photos {
+                // TODO: set photos to gallery cell
+                return self.galleryCell
+            } else {
+                // TODO: Add placeholder view
+                return UITableViewCell()
+            }
         case .spots:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: kNRHomeSpotCellIdentifier, for: indexPath) as! NRHomeSpotCell
