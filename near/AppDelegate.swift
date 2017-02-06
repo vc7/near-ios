@@ -13,10 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        /// Initial NRNRequestsManager's singleton manually.
+        let _ = NRNRequestsManager.default
         
         let homeViewController = NRPreparingViewController()
         self.window?.rootViewController = homeViewController
