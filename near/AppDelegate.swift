@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    internal let containerViewControllerManager = NRContainerViewControllerManager.default
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
@@ -20,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /// Initial NRNRequestsManager's singleton manually.
         let _ = NRNRequestsManager.default
         
-        let containerViewController = NRContainerViewController()
+        let containerViewController = containerViewControllerManager.containerViewController
+        containerViewControllerManager.presetPreparingViewController()
         self.window?.rootViewController = containerViewController
         
         self.window?.makeKeyAndVisible()

@@ -62,9 +62,6 @@ class NRContainerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Default is loading preparing view controller in.
-        self.currentViewController = NRPreparingViewController()
     }
 
     override func didReceiveMemoryWarning() {
