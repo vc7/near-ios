@@ -70,6 +70,10 @@
 		BFB28EC31E489239006265E7 /* NRContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EC11E489239006265E7 /* NRContainerViewController.swift */; };
 		BFB28EC41E489484006265E7 /* NRPreparingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E651E4732A4006265E7 /* NRPreparingViewController.swift */; };
 		BFB28EC51E489504006265E7 /* NRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB01A1E45CD3300A2C7D0 /* NRHomeViewController.swift */; };
+		BFB28EC81E489ACB006265E7 /* NRMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EC61E489ACB006265E7 /* NRMessageViewController.swift */; };
+		BFB28EC91E489ACB006265E7 /* NRMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EC61E489ACB006265E7 /* NRMessageViewController.swift */; };
+		BFB28ECA1E489ACB006265E7 /* NRMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB28EC71E489ACB006265E7 /* NRMessageViewController.xib */; };
+		BFB28ECB1E489ACB006265E7 /* NRMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB28EC71E489ACB006265E7 /* NRMessageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +135,8 @@
 		BFB28EBA1E4809DE006265E7 /* NRNRequestsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNRequestsManager.swift; sourceTree = "<group>"; };
 		BFB28EBE1E486E01006265E7 /* NRLocationManagementCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRLocationManagementCenter.swift; sourceTree = "<group>"; };
 		BFB28EC11E489239006265E7 /* NRContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRContainerViewController.swift; sourceTree = "<group>"; };
+		BFB28EC61E489ACB006265E7 /* NRMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRMessageViewController.swift; sourceTree = "<group>"; };
+		BFB28EC71E489ACB006265E7 /* NRMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRMessageViewController.xib; sourceTree = "<group>"; };
 		C8A0D4E0953C27B78246EEC1 /* Pods-near.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-near.debug.xcconfig"; path = "Pods/Target Support Files/Pods-near/Pods-near.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +222,8 @@
 				BFB28E6A1E47361B006265E7 /* NRLocationRequestExplanationViewController.xib */,
 				BF2AB01A1E45CD3300A2C7D0 /* NRHomeViewController.swift */,
 				BF2AB01B1E45CD3300A2C7D0 /* NRHomeViewController.xib */,
+				BFB28EC61E489ACB006265E7 /* NRMessageViewController.swift */,
+				BFB28EC71E489ACB006265E7 /* NRMessageViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -484,6 +492,7 @@
 				BF2AAFD71E44BD7100A2C7D0 /* LaunchScreen.storyboard in Resources */,
 				BF2AAFD41E44BD7100A2C7D0 /* Assets.xcassets in Resources */,
 				BF2AB0221E4700E200A2C7D0 /* NRHomeGalleryCell.xib in Resources */,
+				BFB28ECA1E489ACB006265E7 /* NRMessageViewController.xib in Resources */,
 				BFB28E681E4732A4006265E7 /* NRPreparingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +501,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB28ECB1E489ACB006265E7 /* NRMessageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +605,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB28EC81E489ACB006265E7 /* NRMessageViewController.swift in Sources */,
 				BF2AAFCD1E44BD7100A2C7D0 /* AppDelegate.swift in Sources */,
 				BFB28E931E477EA1006265E7 /* NRNTemperature.swift in Sources */,
 				BFB28EA21E47EFE2006265E7 /* NRNFetchPhotosService.swift in Sources */,
@@ -649,6 +660,7 @@
 				BFB28EB91E47FDA3006265E7 /* NRNAccess.swift in Sources */,
 				BFB28EA01E47EE70006265E7 /* NRNPhotosRouteTests.swift in Sources */,
 				BFB28E911E477E95006265E7 /* NRNCity.swift in Sources */,
+				BFB28EC91E489ACB006265E7 /* NRMessageViewController.swift in Sources */,
 				BFB28EA31E47EFE2006265E7 /* NRNFetchPhotosService.swift in Sources */,
 				BFB28E9D1E47EDF6006265E7 /* NRNPhotosRoute.swift in Sources */,
 				BFB28EB61E47FBED006265E7 /* NRNSpot.swift in Sources */,
