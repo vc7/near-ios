@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /// Initial NRNRequestsManager's singleton manually.
         let _ = NRNRequestsManager.default
         
-        let homeViewController = NRPreparingViewController()
-        self.window?.rootViewController = homeViewController
+        let containerViewController = NRContainerViewController()
+        self.window?.rootViewController = containerViewController
         
         self.window?.makeKeyAndVisible()
         
