@@ -43,14 +43,3 @@ extension NRPreparingViewController: NRLocationRequestExplanationViewControllerD
         }
     }
 }
-
-// MARK: - Redirection Helpers
-extension NRPreparingViewController {
-    internal func presentHomeViewController() {
-        // TODO: redirect to home view controller
-    }
-    
-    internal func presentMessageViewController() {
-        // TODO: redirect to view controller with recommand message
-    }
-}

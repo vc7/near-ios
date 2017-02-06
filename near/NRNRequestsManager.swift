@@ -17,6 +17,8 @@ extension Notification.Name {
 
 class NRNRequestsManager: NSObject {
     
+    lazy internal var containerViewControllerManager = NRContainerViewControllerManager.default
+    
     /// The location information used for request data.
     var coordinate: CLLocationCoordinate2D? {
         didSet {
@@ -56,6 +58,7 @@ class NRNRequestsManager: NSObject {
                 case .success(let location):
                     self.locationInformation = location
                     NotificationCenter.default.post(name: .NRLocationDidUpdate, object: self.locationInformation)
+                    self.containerViewControllerManager.presentHomeViewControllerIfNeeded()
                     break
                 case .failure(let error):
                     break
@@ -76,6 +79,7 @@ class NRNRequestsManager: NSObject {
                 case .success(let photos):
                     self.photos = photos
                     NotificationCenter.default.post(name: .NRPhotosDidUpdate, object: self.photos)
+                    self.containerViewControllerManager.presentHomeViewControllerIfNeeded()
                     break
                 case .failure(let error):
                     break
@@ -96,6 +100,7 @@ class NRNRequestsManager: NSObject {
                 case .success(let spots):
                     self.spots = spots
                     NotificationCenter.default.post(name: .NRSpotsDidUpdate, object: self.spots)
+                    self.containerViewControllerManager.presentHomeViewControllerIfNeeded()
                     break
                 case .failure(let error):
                     break

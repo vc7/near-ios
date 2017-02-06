@@ -66,6 +66,21 @@
 		BFB28EBC1E4809DE006265E7 /* NRNRequestsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EBA1E4809DE006265E7 /* NRNRequestsManager.swift */; };
 		BFB28EBF1E486E01006265E7 /* NRLocationManagementCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EBE1E486E01006265E7 /* NRLocationManagementCenter.swift */; };
 		BFB28EC01E486E01006265E7 /* NRLocationManagementCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EBE1E486E01006265E7 /* NRLocationManagementCenter.swift */; };
+		BFB28EC21E489239006265E7 /* NRContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EC11E489239006265E7 /* NRContainerViewController.swift */; };
+		BFB28EC31E489239006265E7 /* NRContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EC11E489239006265E7 /* NRContainerViewController.swift */; };
+		BFB28EC41E489484006265E7 /* NRPreparingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E651E4732A4006265E7 /* NRPreparingViewController.swift */; };
+		BFB28EC51E489504006265E7 /* NRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB01A1E45CD3300A2C7D0 /* NRHomeViewController.swift */; };
+		BFB28EC81E489ACB006265E7 /* NRMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EC61E489ACB006265E7 /* NRMessageViewController.swift */; };
+		BFB28EC91E489ACB006265E7 /* NRMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EC61E489ACB006265E7 /* NRMessageViewController.swift */; };
+		BFB28ECA1E489ACB006265E7 /* NRMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB28EC71E489ACB006265E7 /* NRMessageViewController.xib */; };
+		BFB28ECB1E489ACB006265E7 /* NRMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB28EC71E489ACB006265E7 /* NRMessageViewController.xib */; };
+		BFB28ECD1E489F38006265E7 /* NRContainerViewControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28ECC1E489F38006265E7 /* NRContainerViewControllerManager.swift */; };
+		BFB28ECE1E489F38006265E7 /* NRContainerViewControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28ECC1E489F38006265E7 /* NRContainerViewControllerManager.swift */; };
+		BFB28ECF1E48A5DA006265E7 /* NRLocationRequestExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E691E47361B006265E7 /* NRLocationRequestExplanationViewController.swift */; };
+		BFB28ED01E48A9C1006265E7 /* NRHomeGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB01F1E4700E200A2C7D0 /* NRHomeGalleryCell.swift */; };
+		BFB28ED11E48AA54006265E7 /* NRHomeSpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB0271E47112100A2C7D0 /* NRHomeSpotCell.swift */; };
+		BFB28ED21E48AAFA006265E7 /* NRHomeGalleryPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB0231E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.swift */; };
+		BFB28ED31E48AB1E006265E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AAFCC1E44BD7100A2C7D0 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +141,10 @@
 		BFB28EB71E47FDA3006265E7 /* NRNAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNAccess.swift; sourceTree = "<group>"; };
 		BFB28EBA1E4809DE006265E7 /* NRNRequestsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNRequestsManager.swift; sourceTree = "<group>"; };
 		BFB28EBE1E486E01006265E7 /* NRLocationManagementCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRLocationManagementCenter.swift; sourceTree = "<group>"; };
+		BFB28EC11E489239006265E7 /* NRContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRContainerViewController.swift; sourceTree = "<group>"; };
+		BFB28EC61E489ACB006265E7 /* NRMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRMessageViewController.swift; sourceTree = "<group>"; };
+		BFB28EC71E489ACB006265E7 /* NRMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRMessageViewController.xib; sourceTree = "<group>"; };
+		BFB28ECC1E489F38006265E7 /* NRContainerViewControllerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRContainerViewControllerManager.swift; sourceTree = "<group>"; };
 		C8A0D4E0953C27B78246EEC1 /* Pods-near.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-near.debug.xcconfig"; path = "Pods/Target Support Files/Pods-near/Pods-near.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,12 +223,15 @@
 		BF2AAFED1E44BD9900A2C7D0 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BFB28EC11E489239006265E7 /* NRContainerViewController.swift */,
 				BFB28E651E4732A4006265E7 /* NRPreparingViewController.swift */,
 				BFB28E661E4732A4006265E7 /* NRPreparingViewController.xib */,
 				BFB28E691E47361B006265E7 /* NRLocationRequestExplanationViewController.swift */,
 				BFB28E6A1E47361B006265E7 /* NRLocationRequestExplanationViewController.xib */,
 				BF2AB01A1E45CD3300A2C7D0 /* NRHomeViewController.swift */,
 				BF2AB01B1E45CD3300A2C7D0 /* NRHomeViewController.xib */,
+				BFB28EC61E489ACB006265E7 /* NRMessageViewController.swift */,
+				BFB28EC71E489ACB006265E7 /* NRMessageViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -355,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				BFB28EBE1E486E01006265E7 /* NRLocationManagementCenter.swift */,
+				BFB28ECC1E489F38006265E7 /* NRContainerViewControllerManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -478,6 +501,7 @@
 				BF2AAFD71E44BD7100A2C7D0 /* LaunchScreen.storyboard in Resources */,
 				BF2AAFD41E44BD7100A2C7D0 /* Assets.xcassets in Resources */,
 				BF2AB0221E4700E200A2C7D0 /* NRHomeGalleryCell.xib in Resources */,
+				BFB28ECA1E489ACB006265E7 /* NRMessageViewController.xib in Resources */,
 				BFB28E681E4732A4006265E7 /* NRPreparingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +510,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB28ECB1E489ACB006265E7 /* NRMessageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +614,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB28EC81E489ACB006265E7 /* NRMessageViewController.swift in Sources */,
 				BF2AAFCD1E44BD7100A2C7D0 /* AppDelegate.swift in Sources */,
 				BFB28E931E477EA1006265E7 /* NRNTemperature.swift in Sources */,
 				BFB28EA21E47EFE2006265E7 /* NRNFetchPhotosService.swift in Sources */,
@@ -614,6 +640,8 @@
 				BFB28EBF1E486E01006265E7 /* NRLocationManagementCenter.swift in Sources */,
 				BFB28EB21E47FB99006265E7 /* NRNFetchSpotsService.swift in Sources */,
 				BFB28E811E476FA4006265E7 /* LHNetworkRouteType+NR.swift in Sources */,
+				BFB28EC21E489239006265E7 /* NRContainerViewController.swift in Sources */,
+				BFB28ECD1E489F38006265E7 /* NRContainerViewControllerManager.swift in Sources */,
 				BFB28E6B1E47361B006265E7 /* NRLocationRequestExplanationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -622,24 +650,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB28ED31E48AB1E006265E7 /* AppDelegate.swift in Sources */,
 				BFB28E821E476FA4006265E7 /* LHNetworkRouteType+NR.swift in Sources */,
 				BFB28E941E477EA1006265E7 /* NRNTemperature.swift in Sources */,
 				BFB28EA61E47F04E006265E7 /* NRNPhoto.swift in Sources */,
 				BFB28E721E47634A006265E7 /* NRNetworkConfigurationTests.swift in Sources */,
+				BFB28EC31E489239006265E7 /* NRContainerViewController.swift in Sources */,
 				BFB28E761E476415006265E7 /* NRNetworkClient.swift in Sources */,
+				BFB28ECE1E489F38006265E7 /* NRContainerViewControllerManager.swift in Sources */,
+				BFB28ECF1E48A5DA006265E7 /* NRLocationRequestExplanationViewController.swift in Sources */,
 				BFB28EC01E486E01006265E7 /* NRLocationManagementCenter.swift in Sources */,
 				BFB28EB51E47FBE9006265E7 /* NRNFetchSpotsService.swift in Sources */,
 				BFB28EBC1E4809DE006265E7 /* NRNRequestsManager.swift in Sources */,
 				BFB28E8E1E477E0C006265E7 /* NRNLocation.swift in Sources */,
 				BFB28E731E476369006265E7 /* NRNetworkConfiguration.swift in Sources */,
+				BFB28EC51E489504006265E7 /* NRHomeViewController.swift in Sources */,
 				BFB28EA91E47F105006265E7 /* NRNMedia.swift in Sources */,
 				BFB28E7F1E47698D006265E7 /* NRNLocationRoute.swift in Sources */,
 				BFB28E8A1E477B9A006265E7 /* NRNFetchLocationInformationService.swift in Sources */,
 				BFB28EB01E47FB4C006265E7 /* NRNSpotsRoute.swift in Sources */,
+				BFB28EC41E489484006265E7 /* NRPreparingViewController.swift in Sources */,
 				BFB28EB91E47FDA3006265E7 /* NRNAccess.swift in Sources */,
 				BFB28EA01E47EE70006265E7 /* NRNPhotosRouteTests.swift in Sources */,
+				BFB28ED11E48AA54006265E7 /* NRHomeSpotCell.swift in Sources */,
 				BFB28E911E477E95006265E7 /* NRNCity.swift in Sources */,
+				BFB28EC91E489ACB006265E7 /* NRMessageViewController.swift in Sources */,
+				BFB28ED01E48A9C1006265E7 /* NRHomeGalleryCell.swift in Sources */,
 				BFB28EA31E47EFE2006265E7 /* NRNFetchPhotosService.swift in Sources */,
+				BFB28ED21E48AAFA006265E7 /* NRHomeGalleryPhotoCell.swift in Sources */,
 				BFB28E9D1E47EDF6006265E7 /* NRNPhotosRoute.swift in Sources */,
 				BFB28EB61E47FBED006265E7 /* NRNSpot.swift in Sources */,
 				BFB28E971E47809C006265E7 /* NRParsingError.swift in Sources */,
