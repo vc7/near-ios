@@ -53,6 +53,9 @@
 		BFB28EA61E47F04E006265E7 /* NRNPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EA41E47F04E006265E7 /* NRNPhoto.swift */; };
 		BFB28EA81E47F105006265E7 /* NRNMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EA71E47F105006265E7 /* NRNMedia.swift */; };
 		BFB28EA91E47F105006265E7 /* NRNMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EA71E47F105006265E7 /* NRNMedia.swift */; };
+		BFB28EAC1E47FA85006265E7 /* NRNSpotsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EAB1E47FA85006265E7 /* NRNSpotsRoute.swift */; };
+		BFB28EAF1E47FB01006265E7 /* NRNSpotsRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EAE1E47FB01006265E7 /* NRNSpotsRouteTests.swift */; };
+		BFB28EB01E47FB4C006265E7 /* NRNSpotsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EAB1E47FA85006265E7 /* NRNSpotsRoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +109,8 @@
 		BFB28EA11E47EFE2006265E7 /* NRNFetchPhotosService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNFetchPhotosService.swift; sourceTree = "<group>"; };
 		BFB28EA41E47F04E006265E7 /* NRNPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNPhoto.swift; sourceTree = "<group>"; };
 		BFB28EA71E47F105006265E7 /* NRNMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNMedia.swift; sourceTree = "<group>"; };
+		BFB28EAB1E47FA85006265E7 /* NRNSpotsRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNSpotsRoute.swift; sourceTree = "<group>"; };
+		BFB28EAE1E47FB01006265E7 /* NRNSpotsRouteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNSpotsRouteTests.swift; sourceTree = "<group>"; };
 		C8A0D4E0953C27B78246EEC1 /* Pods-near.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-near.debug.xcconfig"; path = "Pods/Target Support Files/Pods-near/Pods-near.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -230,6 +235,7 @@
 			children = (
 				BFB28E7B1E476776006265E7 /* Location */,
 				BFB28E9A1E47EDDB006265E7 /* Photos */,
+				BFB28EAA1E47FA6C006265E7 /* Spots */,
 			);
 			name = APIs;
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 			children = (
 				BFB28E851E477991006265E7 /* Location */,
 				BFB28E9E1E47EE55006265E7 /* Photos */,
+				BFB28EAD1E47FAE2006265E7 /* Spots */,
 			);
 			name = APIs;
 			sourceTree = "<group>";
@@ -306,6 +313,22 @@
 				BFB28E9F1E47EE70006265E7 /* NRNPhotosRouteTests.swift */,
 			);
 			name = Photos;
+			sourceTree = "<group>";
+		};
+		BFB28EAA1E47FA6C006265E7 /* Spots */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28EAB1E47FA85006265E7 /* NRNSpotsRoute.swift */,
+			);
+			name = Spots;
+			sourceTree = "<group>";
+		};
+		BFB28EAD1E47FAE2006265E7 /* Spots */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28EAE1E47FB01006265E7 /* NRNSpotsRouteTests.swift */,
+			);
+			name = Spots;
 			sourceTree = "<group>";
 		};
 		C82608EE7B03A6E8BC70B08A /* Frameworks */ = {
@@ -545,6 +568,7 @@
 				BFB28E901E477E95006265E7 /* NRNCity.swift in Sources */,
 				BFB28E751E476415006265E7 /* NRNetworkClient.swift in Sources */,
 				BFB28E8D1E477E0C006265E7 /* NRNLocation.swift in Sources */,
+				BFB28EAC1E47FA85006265E7 /* NRNSpotsRoute.swift in Sources */,
 				BFB28EA51E47F04E006265E7 /* NRNPhoto.swift in Sources */,
 				BFB28E6F1E475FC2006265E7 /* NRNetworkConfiguration.swift in Sources */,
 				BF2AB0291E47112100A2C7D0 /* NRHomeSpotCell.swift in Sources */,
@@ -575,12 +599,14 @@
 				BFB28EA91E47F105006265E7 /* NRNMedia.swift in Sources */,
 				BFB28E7F1E47698D006265E7 /* NRNLocationRoute.swift in Sources */,
 				BFB28E8A1E477B9A006265E7 /* NRNFetchLocationInformationService.swift in Sources */,
+				BFB28EB01E47FB4C006265E7 /* NRNSpotsRoute.swift in Sources */,
 				BFB28EA01E47EE70006265E7 /* NRNPhotosRouteTests.swift in Sources */,
 				BFB28E911E477E95006265E7 /* NRNCity.swift in Sources */,
 				BFB28EA31E47EFE2006265E7 /* NRNFetchPhotosService.swift in Sources */,
 				BFB28E9D1E47EDF6006265E7 /* NRNPhotosRoute.swift in Sources */,
 				BFB28E971E47809C006265E7 /* NRParsingError.swift in Sources */,
 				BFB28E871E4779A8006265E7 /* NRNLocationRouteTests.swift in Sources */,
+				BFB28EAF1E47FB01006265E7 /* NRNSpotsRouteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  NRNPhotosRouteTests.swift
+//  NRNSpotsRouteTests.swift
 //  near
 //
 //  Created by vincent on 2017/02/06.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class NRNPhotosRouteTests: XCTestCase {
+class NRNSpotsRouteTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -20,12 +20,12 @@ class NRNPhotosRouteTests: XCTestCase {
         super.tearDown()
     }
     
-    func testFetchPhotosRouteParameters() {
+    func testFetchSpotRouteParameters() {
         
         let longitude = "tested_longitude"
         let latitude = "tested_latitude"
         
-        let route = NRNPhotosRoute.fetchPhotos(longitude: longitude, latitude: latitude)
+        let route = NRNSpotsRoute.fetchSpots(longitude: longitude, latitude: latitude)
         
         XCTAssertEqual(route.parameters["longitude"] as? String, longitude)
         XCTAssertEqual(route.parameters["latitude"] as? String, latitude)
