@@ -38,18 +38,33 @@ class NRContainerViewControllerManager: NSObject {
 extension NRContainerViewControllerManager {
     
     func presetPreparingViewController() {
-        self.containerViewController.loadViewIfNeeded()
-        self.containerViewController.currentViewController = NRPreparingViewController()
+        DispatchQueue.main.async {
+            self.containerViewController.loadViewIfNeeded()
+            self.containerViewController.currentViewController = NRPreparingViewController()
+        }
     }
     
     func presentMessageViewController(with failure: NRFailure) {
-        self.containerViewController.loadViewIfNeeded()
-        let messageViewController = NRMessageViewController()
-        messageViewController.message = failure.localizedDescription
-        messageViewController.delegate = self
-        self.containerViewController.currentViewController = messageViewController
+        DispatchQueue.main.async {
+            self.containerViewController.loadViewIfNeeded()
+            let messageViewController = NRMessageViewController()
+            messageViewController.message = failure.localizedDescription
+            messageViewController.delegate = self
+            self.containerViewController.currentViewController = messageViewController
+        }
     }
     
+    func presentHomeViewControllerIfNeeded() {
+        if self.containerViewController.status == .normal {
+            return
+        }
+        
+        DispatchQueue.main.async {
+            self.containerViewController.loadViewIfNeeded()
+            let homeViewContorller = NRHomeViewController()
+            self.containerViewController.currentViewController = homeViewContorller
+        }
+    }
 }
 
 extension NRContainerViewControllerManager: NRMessageViewControllerDelegate {
