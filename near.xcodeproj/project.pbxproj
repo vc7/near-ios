@@ -77,6 +77,10 @@
 		BFB28ECD1E489F38006265E7 /* NRContainerViewControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28ECC1E489F38006265E7 /* NRContainerViewControllerManager.swift */; };
 		BFB28ECE1E489F38006265E7 /* NRContainerViewControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28ECC1E489F38006265E7 /* NRContainerViewControllerManager.swift */; };
 		BFB28ECF1E48A5DA006265E7 /* NRLocationRequestExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E691E47361B006265E7 /* NRLocationRequestExplanationViewController.swift */; };
+		BFB28ED01E48A9C1006265E7 /* NRHomeGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB01F1E4700E200A2C7D0 /* NRHomeGalleryCell.swift */; };
+		BFB28ED11E48AA54006265E7 /* NRHomeSpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB0271E47112100A2C7D0 /* NRHomeSpotCell.swift */; };
+		BFB28ED21E48AAFA006265E7 /* NRHomeGalleryPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB0231E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.swift */; };
+		BFB28ED31E48AB1E006265E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AAFCC1E44BD7100A2C7D0 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -646,6 +650,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB28ED31E48AB1E006265E7 /* AppDelegate.swift in Sources */,
 				BFB28E821E476FA4006265E7 /* LHNetworkRouteType+NR.swift in Sources */,
 				BFB28E941E477EA1006265E7 /* NRNTemperature.swift in Sources */,
 				BFB28EA61E47F04E006265E7 /* NRNPhoto.swift in Sources */,
@@ -667,9 +672,12 @@
 				BFB28EC41E489484006265E7 /* NRPreparingViewController.swift in Sources */,
 				BFB28EB91E47FDA3006265E7 /* NRNAccess.swift in Sources */,
 				BFB28EA01E47EE70006265E7 /* NRNPhotosRouteTests.swift in Sources */,
+				BFB28ED11E48AA54006265E7 /* NRHomeSpotCell.swift in Sources */,
 				BFB28E911E477E95006265E7 /* NRNCity.swift in Sources */,
 				BFB28EC91E489ACB006265E7 /* NRMessageViewController.swift in Sources */,
+				BFB28ED01E48A9C1006265E7 /* NRHomeGalleryCell.swift in Sources */,
 				BFB28EA31E47EFE2006265E7 /* NRNFetchPhotosService.swift in Sources */,
+				BFB28ED21E48AAFA006265E7 /* NRHomeGalleryPhotoCell.swift in Sources */,
 				BFB28E9D1E47EDF6006265E7 /* NRNPhotosRoute.swift in Sources */,
 				BFB28EB61E47FBED006265E7 /* NRNSpot.swift in Sources */,
 				BFB28E971E47809C006265E7 /* NRParsingError.swift in Sources */,
