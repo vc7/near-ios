@@ -33,6 +33,8 @@ class NRLocationManagementCenter: NSObject {
         return manager
     }()
     
+    lazy internal var containerViewControllerManager = NRContainerViewControllerManager.default
+    
     // MARK: - Life cycle
     
     static let `default` = NRLocationManagementCenter()
@@ -74,7 +76,7 @@ extension NRLocationManagementCenter {
             self.updateLocation()
             break
         case .denied, .restricted:
-            // TODO: Notification or delegate
+            self.containerViewControllerManager.presentMessageViewController(with: .withoutAuthorization)
             break
         default:
             break
