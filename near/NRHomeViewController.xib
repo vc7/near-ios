@@ -16,6 +16,7 @@
                 <outlet property="cityNameLabel" destination="bAy-zG-I02" id="Mpq-7E-fpv"/>
                 <outlet property="currentTemperatureLabel" destination="2gs-3s-wjQ" id="gmt-yP-g8C"/>
                 <outlet property="locationInformationHUD" destination="wbv-Ef-7pQ" id="vIr-ji-e3B"/>
+                <outlet property="locationInformationHUDBackground" destination="rAj-pF-3Pu" id="fnT-yo-fsq"/>
                 <outlet property="locationInformationHUDHeightConstraint" destination="fQf-RN-4Op" id="vAs-HY-kII"/>
                 <outlet property="locationInformationHUDTopConstraint" destination="cJd-UA-oPC" id="7AQ-bb-Pfn"/>
                 <outlet property="nearByStationsLabel" destination="MCN-JO-cqP" id="hJE-Op-J3V"/>
@@ -29,6 +30,13 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAj-pF-3Pu">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                    <color key="backgroundColor" red="0.70588235294117641" green="0.80392156862745101" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="220" id="lhp-7i-GTt"/>
+                    </constraints>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbv-Ef-7pQ">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                     <subviews>
@@ -129,12 +137,15 @@
             </subviews>
             <color key="backgroundColor" red="0.9137254901960784" green="0.92156862745098034" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="rAj-pF-3Pu" firstAttribute="leading" secondItem="wbv-Ef-7pQ" secondAttribute="leading" id="4EI-db-qsE"/>
+                <constraint firstItem="rAj-pF-3Pu" firstAttribute="top" secondItem="wbv-Ef-7pQ" secondAttribute="top" id="EZY-4w-Tn4"/>
                 <constraint firstAttribute="trailing" secondItem="NaV-dj-Fn8" secondAttribute="trailing" id="Npn-yX-Lfa"/>
                 <constraint firstItem="NaV-dj-Fn8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TuD-Ox-6qd"/>
                 <constraint firstItem="wbv-Ef-7pQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cJd-UA-oPC"/>
                 <constraint firstAttribute="bottom" secondItem="NaV-dj-Fn8" secondAttribute="bottom" id="f8v-nM-KEL"/>
                 <constraint firstItem="wbv-Ef-7pQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kIB-pJ-wP2"/>
                 <constraint firstItem="NaV-dj-Fn8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mgB-vU-h2J"/>
+                <constraint firstItem="rAj-pF-3Pu" firstAttribute="trailing" secondItem="wbv-Ef-7pQ" secondAttribute="trailing" id="peM-qY-jI6"/>
                 <constraint firstAttribute="trailing" secondItem="wbv-Ef-7pQ" secondAttribute="trailing" id="rXa-ni-LXR"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="54.5"/>
