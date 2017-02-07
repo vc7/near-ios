@@ -16,6 +16,12 @@ class NRHomeGalleryCell: UITableViewCell {
     /// The default ideal height for the instance of `NRHomeGalleryCell`
     static let defaultHeight: CGFloat = 265
     
+    var photos: [NRNPhoto]? {
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
+    
     @IBOutlet internal weak var collectionView: UICollectionView!
     
     override func awakeFromNib() {
@@ -33,12 +39,15 @@ class NRHomeGalleryCell: UITableViewCell {
 // MARK: - UICollectionViewDataSource
 extension NRHomeGalleryCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return self.photos?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNRHomeGalleryPhotoCellIdentifier, for: indexPath) as! NRHomeGalleryPhotoCell
+        
+        let photo = self.photos?[indexPath.item]
+        cell.photo = photo
         
         return cell
     }
