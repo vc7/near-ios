@@ -139,6 +139,9 @@ extension NRHomeViewController: UITableViewDataSource {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: kNRHomeSpotCellIdentifier, for: indexPath) as! NRHomeSpotCell
             
+            let spot = self.spots?[indexPath.row]
+            cell.spot = spot
+            
             return cell
         }
     }
