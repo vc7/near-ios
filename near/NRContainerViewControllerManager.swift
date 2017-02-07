@@ -16,12 +16,13 @@ enum NRFailure: Error {
     
     var localizedDescription: String {
         switch self {
+        case .withoutAuthorization, .withoutLocationService:
+            return "このアプリは、GPS データが必要なんです。「設定」でオンしてくださいね。"
+        case .fetchingLocationFailure:
+            return "位置情報ゲット失敗しちゃった、「リロード」を押す、もう一度ゲットしてみてくださいね。"
         case .offlineFailure:
-            return "やばい、通信出来ない。ちょっとチェックしてみて下さいね。"
-        default:
-            break
+            return "やばい、通信出来ない。ちょっとチェックしてみてくださいね。"
         }
-        return "default description"
     }
 }
 
