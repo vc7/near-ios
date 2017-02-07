@@ -3,6 +3,7 @@ target 'near' do
 
 	# General Usage
 	pod 'LHNetworkBase'
+	pod 'SDWebImage'
 
   target 'nearTests' do
     inherit! :search_paths
