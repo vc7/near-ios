@@ -228,7 +228,7 @@ extension NRHomeViewController {
             self.nearByStationsLabel.text = "最寄駅 - " + formattedStationNames
             
             self.currentTemperatureLabel.text = location?.temperature?.current
-            self.additionInformationLabel.text = "\(location?.temperature?.low ?? "--") / \(location?.temperature?.high ?? "--")"
+            self.additionInformationLabel.text = "\(location?.temperature?.low ?? "--") / \(location?.temperature?.high ?? "--") °C"
             
             if let location = location {
                 
