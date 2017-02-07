@@ -1,3 +1,5 @@
+platform :ios, '9.0'
+
 target 'near' do
   use_frameworks!
 
