@@ -15,6 +15,12 @@ enum NRFailure: Error {
     case offlineFailure
     
     var localizedDescription: String {
+        switch self {
+        case .offlineFailure:
+            return "やばい、通信出来ない。ちょっとチェックしてみて下さいね。"
+        default:
+            break
+        }
         return "default description"
     }
 }
