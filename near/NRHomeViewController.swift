@@ -48,7 +48,11 @@ class NRHomeViewController: UIViewController {
             self.updateLocationInformationHUD(locationInformation)
         }
     }
-    internal var photos: [NRNPhoto]?
+    internal var photos: [NRNPhoto]? {
+        didSet {
+            self.galleryCell.photos = photos
+        }
+    }
     internal var spots: [NRNSpot]?
     
     // MARK: - Life cycle
