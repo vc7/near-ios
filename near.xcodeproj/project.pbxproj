@@ -9,12 +9,86 @@
 /* Begin PBXBuildFile section */
 		11B6F3256BD78ABA27ABAB0D /* Pods_nearTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9576C29805136D2F398B9F /* Pods_nearTests.framework */; };
 		2C5E7C9141E789B49FB4082B /* Pods_near.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213CD05DB36DC43B04711FFE /* Pods_near.framework */; };
+		BF19C6BA1E4AF3B300F85B96 /* NRDecorationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C6B81E4AF3B300F85B96 /* NRDecorationCell.swift */; };
+		BF19C6BB1E4AF3B300F85B96 /* NRDecorationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C6B81E4AF3B300F85B96 /* NRDecorationCell.swift */; };
+		BF19C6BC1E4AF3B300F85B96 /* NRDecorationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF19C6B91E4AF3B300F85B96 /* NRDecorationCell.xib */; };
+		BF19C6BD1E4AF3B300F85B96 /* NRDecorationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF19C6B91E4AF3B300F85B96 /* NRDecorationCell.xib */; };
+		BF19C6C01E4B099500F85B96 /* NRUpdateRequireCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C6BE1E4B099500F85B96 /* NRUpdateRequireCell.swift */; };
+		BF19C6C11E4B099500F85B96 /* NRUpdateRequireCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C6BE1E4B099500F85B96 /* NRUpdateRequireCell.swift */; };
+		BF19C6C21E4B099500F85B96 /* NRUpdateRequireCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF19C6BF1E4B099500F85B96 /* NRUpdateRequireCell.xib */; };
+		BF19C6C31E4B099500F85B96 /* NRUpdateRequireCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF19C6BF1E4B099500F85B96 /* NRUpdateRequireCell.xib */; };
 		BF2AAFCD1E44BD7100A2C7D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AAFCC1E44BD7100A2C7D0 /* AppDelegate.swift */; };
 		BF2AAFD41E44BD7100A2C7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2AAFD31E44BD7100A2C7D0 /* Assets.xcassets */; };
 		BF2AAFD71E44BD7100A2C7D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2AAFD51E44BD7100A2C7D0 /* LaunchScreen.storyboard */; };
-		BF2AAFE21E44BD7100A2C7D0 /* nearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AAFE11E44BD7100A2C7D0 /* nearTests.swift */; };
 		BF2AB01C1E45CD3300A2C7D0 /* NRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB01A1E45CD3300A2C7D0 /* NRHomeViewController.swift */; };
 		BF2AB01D1E45CD3300A2C7D0 /* NRHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2AB01B1E45CD3300A2C7D0 /* NRHomeViewController.xib */; };
+		BF2AB0211E4700E200A2C7D0 /* NRHomeGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB01F1E4700E200A2C7D0 /* NRHomeGalleryCell.swift */; };
+		BF2AB0221E4700E200A2C7D0 /* NRHomeGalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2AB0201E4700E200A2C7D0 /* NRHomeGalleryCell.xib */; };
+		BF2AB0251E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB0231E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.swift */; };
+		BF2AB0261E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2AB0241E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.xib */; };
+		BF2AB0291E47112100A2C7D0 /* NRHomeSpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB0271E47112100A2C7D0 /* NRHomeSpotCell.swift */; };
+		BF2AB02A1E47112100A2C7D0 /* NRHomeSpotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2AB0281E47112100A2C7D0 /* NRHomeSpotCell.xib */; };
+		BFB28E671E4732A4006265E7 /* NRPreparingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E651E4732A4006265E7 /* NRPreparingViewController.swift */; };
+		BFB28E681E4732A4006265E7 /* NRPreparingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB28E661E4732A4006265E7 /* NRPreparingViewController.xib */; };
+		BFB28E6B1E47361B006265E7 /* NRLocationRequestExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E691E47361B006265E7 /* NRLocationRequestExplanationViewController.swift */; };
+		BFB28E6C1E47361B006265E7 /* NRLocationRequestExplanationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB28E6A1E47361B006265E7 /* NRLocationRequestExplanationViewController.xib */; };
+		BFB28E6F1E475FC2006265E7 /* NRNetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E6E1E475FC2006265E7 /* NRNetworkConfiguration.swift */; };
+		BFB28E721E47634A006265E7 /* NRNetworkConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E711E47634A006265E7 /* NRNetworkConfigurationTests.swift */; };
+		BFB28E731E476369006265E7 /* NRNetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E6E1E475FC2006265E7 /* NRNetworkConfiguration.swift */; };
+		BFB28E751E476415006265E7 /* NRNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E741E476415006265E7 /* NRNetworkClient.swift */; };
+		BFB28E761E476415006265E7 /* NRNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E741E476415006265E7 /* NRNetworkClient.swift */; };
+		BFB28E7A1E476768006265E7 /* NRNLocationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E791E476768006265E7 /* NRNLocationRoute.swift */; };
+		BFB28E7F1E47698D006265E7 /* NRNLocationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E791E476768006265E7 /* NRNLocationRoute.swift */; };
+		BFB28E811E476FA4006265E7 /* LHNetworkRouteType+NR.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E801E476FA4006265E7 /* LHNetworkRouteType+NR.swift */; };
+		BFB28E821E476FA4006265E7 /* LHNetworkRouteType+NR.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E801E476FA4006265E7 /* LHNetworkRouteType+NR.swift */; };
+		BFB28E871E4779A8006265E7 /* NRNLocationRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E861E4779A8006265E7 /* NRNLocationRouteTests.swift */; };
+		BFB28E891E477B9A006265E7 /* NRNFetchLocationInformationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E881E477B9A006265E7 /* NRNFetchLocationInformationService.swift */; };
+		BFB28E8A1E477B9A006265E7 /* NRNFetchLocationInformationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E881E477B9A006265E7 /* NRNFetchLocationInformationService.swift */; };
+		BFB28E8D1E477E0C006265E7 /* NRNLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E8C1E477E0C006265E7 /* NRNLocation.swift */; };
+		BFB28E8E1E477E0C006265E7 /* NRNLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E8C1E477E0C006265E7 /* NRNLocation.swift */; };
+		BFB28E901E477E95006265E7 /* NRNCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E8F1E477E95006265E7 /* NRNCity.swift */; };
+		BFB28E911E477E95006265E7 /* NRNCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E8F1E477E95006265E7 /* NRNCity.swift */; };
+		BFB28E931E477EA1006265E7 /* NRNTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E921E477EA1006265E7 /* NRNTemperature.swift */; };
+		BFB28E941E477EA1006265E7 /* NRNTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E921E477EA1006265E7 /* NRNTemperature.swift */; };
+		BFB28E961E47809C006265E7 /* NRParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E951E47809C006265E7 /* NRParsingError.swift */; };
+		BFB28E971E47809C006265E7 /* NRParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E951E47809C006265E7 /* NRParsingError.swift */; };
+		BFB28E9C1E47EDF6006265E7 /* NRNPhotosRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E9B1E47EDF6006265E7 /* NRNPhotosRoute.swift */; };
+		BFB28E9D1E47EDF6006265E7 /* NRNPhotosRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E9B1E47EDF6006265E7 /* NRNPhotosRoute.swift */; };
+		BFB28EA01E47EE70006265E7 /* NRNPhotosRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E9F1E47EE70006265E7 /* NRNPhotosRouteTests.swift */; };
+		BFB28EA21E47EFE2006265E7 /* NRNFetchPhotosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EA11E47EFE2006265E7 /* NRNFetchPhotosService.swift */; };
+		BFB28EA31E47EFE2006265E7 /* NRNFetchPhotosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EA11E47EFE2006265E7 /* NRNFetchPhotosService.swift */; };
+		BFB28EA51E47F04E006265E7 /* NRNPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EA41E47F04E006265E7 /* NRNPhoto.swift */; };
+		BFB28EA61E47F04E006265E7 /* NRNPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EA41E47F04E006265E7 /* NRNPhoto.swift */; };
+		BFB28EA81E47F105006265E7 /* NRNMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EA71E47F105006265E7 /* NRNMedia.swift */; };
+		BFB28EA91E47F105006265E7 /* NRNMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EA71E47F105006265E7 /* NRNMedia.swift */; };
+		BFB28EAC1E47FA85006265E7 /* NRNSpotsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EAB1E47FA85006265E7 /* NRNSpotsRoute.swift */; };
+		BFB28EAF1E47FB01006265E7 /* NRNSpotsRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EAE1E47FB01006265E7 /* NRNSpotsRouteTests.swift */; };
+		BFB28EB01E47FB4C006265E7 /* NRNSpotsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EAB1E47FA85006265E7 /* NRNSpotsRoute.swift */; };
+		BFB28EB21E47FB99006265E7 /* NRNFetchSpotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EB11E47FB99006265E7 /* NRNFetchSpotsService.swift */; };
+		BFB28EB41E47FBE3006265E7 /* NRNSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EB31E47FBE3006265E7 /* NRNSpot.swift */; };
+		BFB28EB51E47FBE9006265E7 /* NRNFetchSpotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EB11E47FB99006265E7 /* NRNFetchSpotsService.swift */; };
+		BFB28EB61E47FBED006265E7 /* NRNSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EB31E47FBE3006265E7 /* NRNSpot.swift */; };
+		BFB28EB81E47FDA3006265E7 /* NRNAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EB71E47FDA3006265E7 /* NRNAccess.swift */; };
+		BFB28EB91E47FDA3006265E7 /* NRNAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EB71E47FDA3006265E7 /* NRNAccess.swift */; };
+		BFB28EBB1E4809DE006265E7 /* NRNRequestsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EBA1E4809DE006265E7 /* NRNRequestsManager.swift */; };
+		BFB28EBC1E4809DE006265E7 /* NRNRequestsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EBA1E4809DE006265E7 /* NRNRequestsManager.swift */; };
+		BFB28EBF1E486E01006265E7 /* NRLocationManagementCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EBE1E486E01006265E7 /* NRLocationManagementCenter.swift */; };
+		BFB28EC01E486E01006265E7 /* NRLocationManagementCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EBE1E486E01006265E7 /* NRLocationManagementCenter.swift */; };
+		BFB28EC21E489239006265E7 /* NRContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EC11E489239006265E7 /* NRContainerViewController.swift */; };
+		BFB28EC31E489239006265E7 /* NRContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EC11E489239006265E7 /* NRContainerViewController.swift */; };
+		BFB28EC41E489484006265E7 /* NRPreparingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E651E4732A4006265E7 /* NRPreparingViewController.swift */; };
+		BFB28EC51E489504006265E7 /* NRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB01A1E45CD3300A2C7D0 /* NRHomeViewController.swift */; };
+		BFB28EC81E489ACB006265E7 /* NRMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EC61E489ACB006265E7 /* NRMessageViewController.swift */; };
+		BFB28EC91E489ACB006265E7 /* NRMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28EC61E489ACB006265E7 /* NRMessageViewController.swift */; };
+		BFB28ECA1E489ACB006265E7 /* NRMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB28EC71E489ACB006265E7 /* NRMessageViewController.xib */; };
+		BFB28ECB1E489ACB006265E7 /* NRMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB28EC71E489ACB006265E7 /* NRMessageViewController.xib */; };
+		BFB28ECD1E489F38006265E7 /* NRContainerViewControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28ECC1E489F38006265E7 /* NRContainerViewControllerManager.swift */; };
+		BFB28ECE1E489F38006265E7 /* NRContainerViewControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28ECC1E489F38006265E7 /* NRContainerViewControllerManager.swift */; };
+		BFB28ECF1E48A5DA006265E7 /* NRLocationRequestExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB28E691E47361B006265E7 /* NRLocationRequestExplanationViewController.swift */; };
+		BFB28ED01E48A9C1006265E7 /* NRHomeGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB01F1E4700E200A2C7D0 /* NRHomeGalleryCell.swift */; };
+		BFB28ED11E48AA54006265E7 /* NRHomeSpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB0271E47112100A2C7D0 /* NRHomeSpotCell.swift */; };
+		BFB28ED21E48AAFA006265E7 /* NRHomeGalleryPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AB0231E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.swift */; };
+		BFB28ED31E48AB1E006265E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AAFCC1E44BD7100A2C7D0 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +107,56 @@
 		5A9576C29805136D2F398B9F /* Pods_nearTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nearTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD01CF92F8D7855020FE55F /* Pods-nearTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nearTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nearTests/Pods-nearTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF30B22D069440D5B37D3A44 /* Pods-near.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-near.release.xcconfig"; path = "Pods/Target Support Files/Pods-near/Pods-near.release.xcconfig"; sourceTree = "<group>"; };
+		BF19C6B81E4AF3B300F85B96 /* NRDecorationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRDecorationCell.swift; sourceTree = "<group>"; };
+		BF19C6B91E4AF3B300F85B96 /* NRDecorationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRDecorationCell.xib; sourceTree = "<group>"; };
+		BF19C6BE1E4B099500F85B96 /* NRUpdateRequireCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRUpdateRequireCell.swift; sourceTree = "<group>"; };
+		BF19C6BF1E4B099500F85B96 /* NRUpdateRequireCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRUpdateRequireCell.xib; sourceTree = "<group>"; };
 		BF2AAFC91E44BD7100A2C7D0 /* near.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = near.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2AAFCC1E44BD7100A2C7D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF2AAFD31E44BD7100A2C7D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF2AAFD61E44BD7100A2C7D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF2AAFD81E44BD7100A2C7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2AAFDD1E44BD7100A2C7D0 /* nearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF2AAFE11E44BD7100A2C7D0 /* nearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nearTests.swift; sourceTree = "<group>"; };
 		BF2AAFE31E44BD7100A2C7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2AB01A1E45CD3300A2C7D0 /* NRHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRHomeViewController.swift; sourceTree = "<group>"; };
 		BF2AB01B1E45CD3300A2C7D0 /* NRHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRHomeViewController.xib; sourceTree = "<group>"; };
+		BF2AB01F1E4700E200A2C7D0 /* NRHomeGalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRHomeGalleryCell.swift; sourceTree = "<group>"; };
+		BF2AB0201E4700E200A2C7D0 /* NRHomeGalleryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRHomeGalleryCell.xib; sourceTree = "<group>"; };
+		BF2AB0231E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRHomeGalleryPhotoCell.swift; sourceTree = "<group>"; };
+		BF2AB0241E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRHomeGalleryPhotoCell.xib; sourceTree = "<group>"; };
+		BF2AB0271E47112100A2C7D0 /* NRHomeSpotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRHomeSpotCell.swift; sourceTree = "<group>"; };
+		BF2AB0281E47112100A2C7D0 /* NRHomeSpotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRHomeSpotCell.xib; sourceTree = "<group>"; };
+		BFB28E651E4732A4006265E7 /* NRPreparingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRPreparingViewController.swift; sourceTree = "<group>"; };
+		BFB28E661E4732A4006265E7 /* NRPreparingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRPreparingViewController.xib; sourceTree = "<group>"; };
+		BFB28E691E47361B006265E7 /* NRLocationRequestExplanationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRLocationRequestExplanationViewController.swift; sourceTree = "<group>"; };
+		BFB28E6A1E47361B006265E7 /* NRLocationRequestExplanationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRLocationRequestExplanationViewController.xib; sourceTree = "<group>"; };
+		BFB28E6E1E475FC2006265E7 /* NRNetworkConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNetworkConfiguration.swift; sourceTree = "<group>"; };
+		BFB28E711E47634A006265E7 /* NRNetworkConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNetworkConfigurationTests.swift; sourceTree = "<group>"; };
+		BFB28E741E476415006265E7 /* NRNetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNetworkClient.swift; sourceTree = "<group>"; };
+		BFB28E791E476768006265E7 /* NRNLocationRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNLocationRoute.swift; sourceTree = "<group>"; };
+		BFB28E801E476FA4006265E7 /* LHNetworkRouteType+NR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LHNetworkRouteType+NR.swift"; sourceTree = "<group>"; };
+		BFB28E861E4779A8006265E7 /* NRNLocationRouteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNLocationRouteTests.swift; sourceTree = "<group>"; };
+		BFB28E881E477B9A006265E7 /* NRNFetchLocationInformationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNFetchLocationInformationService.swift; sourceTree = "<group>"; };
+		BFB28E8C1E477E0C006265E7 /* NRNLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNLocation.swift; sourceTree = "<group>"; };
+		BFB28E8F1E477E95006265E7 /* NRNCity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNCity.swift; sourceTree = "<group>"; };
+		BFB28E921E477EA1006265E7 /* NRNTemperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNTemperature.swift; sourceTree = "<group>"; };
+		BFB28E951E47809C006265E7 /* NRParsingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRParsingError.swift; sourceTree = "<group>"; };
+		BFB28E9B1E47EDF6006265E7 /* NRNPhotosRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNPhotosRoute.swift; sourceTree = "<group>"; };
+		BFB28E9F1E47EE70006265E7 /* NRNPhotosRouteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNPhotosRouteTests.swift; sourceTree = "<group>"; };
+		BFB28EA11E47EFE2006265E7 /* NRNFetchPhotosService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNFetchPhotosService.swift; sourceTree = "<group>"; };
+		BFB28EA41E47F04E006265E7 /* NRNPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNPhoto.swift; sourceTree = "<group>"; };
+		BFB28EA71E47F105006265E7 /* NRNMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNMedia.swift; sourceTree = "<group>"; };
+		BFB28EAB1E47FA85006265E7 /* NRNSpotsRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNSpotsRoute.swift; sourceTree = "<group>"; };
+		BFB28EAE1E47FB01006265E7 /* NRNSpotsRouteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNSpotsRouteTests.swift; sourceTree = "<group>"; };
+		BFB28EB11E47FB99006265E7 /* NRNFetchSpotsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNFetchSpotsService.swift; sourceTree = "<group>"; };
+		BFB28EB31E47FBE3006265E7 /* NRNSpot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNSpot.swift; sourceTree = "<group>"; };
+		BFB28EB71E47FDA3006265E7 /* NRNAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNAccess.swift; sourceTree = "<group>"; };
+		BFB28EBA1E4809DE006265E7 /* NRNRequestsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNRequestsManager.swift; sourceTree = "<group>"; };
+		BFB28EBE1E486E01006265E7 /* NRLocationManagementCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRLocationManagementCenter.swift; sourceTree = "<group>"; };
+		BFB28EC11E489239006265E7 /* NRContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRContainerViewController.swift; sourceTree = "<group>"; };
+		BFB28EC61E489ACB006265E7 /* NRMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRMessageViewController.swift; sourceTree = "<group>"; };
+		BFB28EC71E489ACB006265E7 /* NRMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRMessageViewController.xib; sourceTree = "<group>"; };
+		BFB28ECC1E489F38006265E7 /* NRContainerViewControllerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRContainerViewControllerManager.swift; sourceTree = "<group>"; };
 		C8A0D4E0953C27B78246EEC1 /* Pods-near.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-near.debug.xcconfig"; path = "Pods/Target Support Files/Pods-near/Pods-near.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +205,9 @@
 			children = (
 				BF2AAFEC1E44BD8300A2C7D0 /* Application */,
 				BF2AAFED1E44BD9900A2C7D0 /* View Controllers */,
+				BF2AB01E1E47009500A2C7D0 /* Views */,
+				BFB28E6D1E475F2E006265E7 /* Networking */,
+				BFB28EBD1E486DDF006265E7 /* Managers */,
 			);
 			path = near;
 			sourceTree = "<group>";
@@ -98,7 +215,7 @@
 		BF2AAFE01E44BD7100A2C7D0 /* nearTests */ = {
 			isa = PBXGroup;
 			children = (
-				BF2AAFE11E44BD7100A2C7D0 /* nearTests.swift */,
+				BFB28E701E476336006265E7 /* Networking */,
 				BF2AAFE31E44BD7100A2C7D0 /* Info.plist */,
 			);
 			path = nearTests;
@@ -118,10 +235,167 @@
 		BF2AAFED1E44BD9900A2C7D0 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BFB28EC11E489239006265E7 /* NRContainerViewController.swift */,
+				BFB28E651E4732A4006265E7 /* NRPreparingViewController.swift */,
+				BFB28E661E4732A4006265E7 /* NRPreparingViewController.xib */,
+				BFB28E691E47361B006265E7 /* NRLocationRequestExplanationViewController.swift */,
+				BFB28E6A1E47361B006265E7 /* NRLocationRequestExplanationViewController.xib */,
 				BF2AB01A1E45CD3300A2C7D0 /* NRHomeViewController.swift */,
 				BF2AB01B1E45CD3300A2C7D0 /* NRHomeViewController.xib */,
+				BFB28EC61E489ACB006265E7 /* NRMessageViewController.swift */,
+				BFB28EC71E489ACB006265E7 /* NRMessageViewController.xib */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BF2AB01E1E47009500A2C7D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF2AB01F1E4700E200A2C7D0 /* NRHomeGalleryCell.swift */,
+				BF2AB0201E4700E200A2C7D0 /* NRHomeGalleryCell.xib */,
+				BF2AB0231E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.swift */,
+				BF2AB0241E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.xib */,
+				BF2AB0271E47112100A2C7D0 /* NRHomeSpotCell.swift */,
+				BF2AB0281E47112100A2C7D0 /* NRHomeSpotCell.xib */,
+				BF19C6B81E4AF3B300F85B96 /* NRDecorationCell.swift */,
+				BF19C6B91E4AF3B300F85B96 /* NRDecorationCell.xib */,
+				BF19C6BE1E4B099500F85B96 /* NRUpdateRequireCell.swift */,
+				BF19C6BF1E4B099500F85B96 /* NRUpdateRequireCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BFB28E6D1E475F2E006265E7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28EBA1E4809DE006265E7 /* NRNRequestsManager.swift */,
+				BFB28E781E47671C006265E7 /* Base */,
+				BFB28E771E476714006265E7 /* APIs */,
+				BFB28E8B1E477DE2006265E7 /* Models */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		BFB28E701E476336006265E7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28E831E477981006265E7 /* Base */,
+				BFB28E841E477989006265E7 /* APIs */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		BFB28E771E476714006265E7 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28E7B1E476776006265E7 /* Location */,
+				BFB28E9A1E47EDDB006265E7 /* Photos */,
+				BFB28EAA1E47FA6C006265E7 /* Spots */,
+			);
+			name = APIs;
+			sourceTree = "<group>";
+		};
+		BFB28E781E47671C006265E7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28E6E1E475FC2006265E7 /* NRNetworkConfiguration.swift */,
+				BFB28E741E476415006265E7 /* NRNetworkClient.swift */,
+				BFB28E951E47809C006265E7 /* NRParsingError.swift */,
+				BFB28E801E476FA4006265E7 /* LHNetworkRouteType+NR.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		BFB28E7B1E476776006265E7 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28E791E476768006265E7 /* NRNLocationRoute.swift */,
+				BFB28E881E477B9A006265E7 /* NRNFetchLocationInformationService.swift */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		BFB28E831E477981006265E7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28E711E47634A006265E7 /* NRNetworkConfigurationTests.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		BFB28E841E477989006265E7 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28E851E477991006265E7 /* Location */,
+				BFB28E9E1E47EE55006265E7 /* Photos */,
+				BFB28EAD1E47FAE2006265E7 /* Spots */,
+			);
+			name = APIs;
+			sourceTree = "<group>";
+		};
+		BFB28E851E477991006265E7 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28E861E4779A8006265E7 /* NRNLocationRouteTests.swift */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		BFB28E8B1E477DE2006265E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28E8C1E477E0C006265E7 /* NRNLocation.swift */,
+				BFB28E8F1E477E95006265E7 /* NRNCity.swift */,
+				BFB28E921E477EA1006265E7 /* NRNTemperature.swift */,
+				BFB28EA41E47F04E006265E7 /* NRNPhoto.swift */,
+				BFB28EA71E47F105006265E7 /* NRNMedia.swift */,
+				BFB28EB31E47FBE3006265E7 /* NRNSpot.swift */,
+				BFB28EB71E47FDA3006265E7 /* NRNAccess.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BFB28E9A1E47EDDB006265E7 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28E9B1E47EDF6006265E7 /* NRNPhotosRoute.swift */,
+				BFB28EA11E47EFE2006265E7 /* NRNFetchPhotosService.swift */,
+			);
+			name = Photos;
+			sourceTree = "<group>";
+		};
+		BFB28E9E1E47EE55006265E7 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28E9F1E47EE70006265E7 /* NRNPhotosRouteTests.swift */,
+			);
+			name = Photos;
+			sourceTree = "<group>";
+		};
+		BFB28EAA1E47FA6C006265E7 /* Spots */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28EAB1E47FA85006265E7 /* NRNSpotsRoute.swift */,
+				BFB28EB11E47FB99006265E7 /* NRNFetchSpotsService.swift */,
+			);
+			name = Spots;
+			sourceTree = "<group>";
+		};
+		BFB28EAD1E47FAE2006265E7 /* Spots */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28EAE1E47FB01006265E7 /* NRNSpotsRouteTests.swift */,
+			);
+			name = Spots;
+			sourceTree = "<group>";
+		};
+		BFB28EBD1E486DDF006265E7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BFB28EBE1E486E01006265E7 /* NRLocationManagementCenter.swift */,
+				BFB28ECC1E489F38006265E7 /* NRContainerViewControllerManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		C82608EE7B03A6E8BC70B08A /* Frameworks */ = {
@@ -194,6 +468,7 @@
 		BF2AAFC11E44BD7100A2C7D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NR;
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = vc7;
@@ -235,9 +510,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2AB02A1E47112100A2C7D0 /* NRHomeSpotCell.xib in Resources */,
+				BF19C6BC1E4AF3B300F85B96 /* NRDecorationCell.xib in Resources */,
+				BF2AB0261E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.xib in Resources */,
+				BF19C6C21E4B099500F85B96 /* NRUpdateRequireCell.xib in Resources */,
 				BF2AB01D1E45CD3300A2C7D0 /* NRHomeViewController.xib in Resources */,
+				BFB28E6C1E47361B006265E7 /* NRLocationRequestExplanationViewController.xib in Resources */,
 				BF2AAFD71E44BD7100A2C7D0 /* LaunchScreen.storyboard in Resources */,
 				BF2AAFD41E44BD7100A2C7D0 /* Assets.xcassets in Resources */,
+				BF2AB0221E4700E200A2C7D0 /* NRHomeGalleryCell.xib in Resources */,
+				BFB28ECA1E489ACB006265E7 /* NRMessageViewController.xib in Resources */,
+				BFB28E681E4732A4006265E7 /* NRPreparingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +528,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB28ECB1E489ACB006265E7 /* NRMessageViewController.xib in Resources */,
+				BF19C6C31E4B099500F85B96 /* NRUpdateRequireCell.xib in Resources */,
+				BF19C6BD1E4AF3B300F85B96 /* NRDecorationCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,8 +634,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB28EC81E489ACB006265E7 /* NRMessageViewController.swift in Sources */,
 				BF2AAFCD1E44BD7100A2C7D0 /* AppDelegate.swift in Sources */,
+				BFB28E931E477EA1006265E7 /* NRNTemperature.swift in Sources */,
+				BFB28EA21E47EFE2006265E7 /* NRNFetchPhotosService.swift in Sources */,
+				BFB28E9C1E47EDF6006265E7 /* NRNPhotosRoute.swift in Sources */,
+				BFB28EB41E47FBE3006265E7 /* NRNSpot.swift in Sources */,
+				BFB28E901E477E95006265E7 /* NRNCity.swift in Sources */,
+				BFB28E751E476415006265E7 /* NRNetworkClient.swift in Sources */,
+				BFB28E8D1E477E0C006265E7 /* NRNLocation.swift in Sources */,
+				BFB28EAC1E47FA85006265E7 /* NRNSpotsRoute.swift in Sources */,
+				BFB28EA51E47F04E006265E7 /* NRNPhoto.swift in Sources */,
+				BFB28E6F1E475FC2006265E7 /* NRNetworkConfiguration.swift in Sources */,
+				BF2AB0291E47112100A2C7D0 /* NRHomeSpotCell.swift in Sources */,
+				BFB28E891E477B9A006265E7 /* NRNFetchLocationInformationService.swift in Sources */,
 				BF2AB01C1E45CD3300A2C7D0 /* NRHomeViewController.swift in Sources */,
+				BF2AB0251E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.swift in Sources */,
+				BF2AB0211E4700E200A2C7D0 /* NRHomeGalleryCell.swift in Sources */,
+				BFB28E7A1E476768006265E7 /* NRNLocationRoute.swift in Sources */,
+				BFB28EA81E47F105006265E7 /* NRNMedia.swift in Sources */,
+				BFB28EB81E47FDA3006265E7 /* NRNAccess.swift in Sources */,
+				BFB28EBB1E4809DE006265E7 /* NRNRequestsManager.swift in Sources */,
+				BFB28E671E4732A4006265E7 /* NRPreparingViewController.swift in Sources */,
+				BFB28E961E47809C006265E7 /* NRParsingError.swift in Sources */,
+				BFB28EBF1E486E01006265E7 /* NRLocationManagementCenter.swift in Sources */,
+				BFB28EB21E47FB99006265E7 /* NRNFetchSpotsService.swift in Sources */,
+				BFB28E811E476FA4006265E7 /* LHNetworkRouteType+NR.swift in Sources */,
+				BFB28EC21E489239006265E7 /* NRContainerViewController.swift in Sources */,
+				BFB28ECD1E489F38006265E7 /* NRContainerViewControllerManager.swift in Sources */,
+				BFB28E6B1E47361B006265E7 /* NRLocationRequestExplanationViewController.swift in Sources */,
+				BF19C6BA1E4AF3B300F85B96 /* NRDecorationCell.swift in Sources */,
+				BF19C6C01E4B099500F85B96 /* NRUpdateRequireCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +672,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF2AAFE21E44BD7100A2C7D0 /* nearTests.swift in Sources */,
+				BFB28ED31E48AB1E006265E7 /* AppDelegate.swift in Sources */,
+				BFB28E821E476FA4006265E7 /* LHNetworkRouteType+NR.swift in Sources */,
+				BFB28E941E477EA1006265E7 /* NRNTemperature.swift in Sources */,
+				BFB28EA61E47F04E006265E7 /* NRNPhoto.swift in Sources */,
+				BFB28E721E47634A006265E7 /* NRNetworkConfigurationTests.swift in Sources */,
+				BFB28EC31E489239006265E7 /* NRContainerViewController.swift in Sources */,
+				BFB28E761E476415006265E7 /* NRNetworkClient.swift in Sources */,
+				BFB28ECE1E489F38006265E7 /* NRContainerViewControllerManager.swift in Sources */,
+				BFB28ECF1E48A5DA006265E7 /* NRLocationRequestExplanationViewController.swift in Sources */,
+				BFB28EC01E486E01006265E7 /* NRLocationManagementCenter.swift in Sources */,
+				BFB28EB51E47FBE9006265E7 /* NRNFetchSpotsService.swift in Sources */,
+				BFB28EBC1E4809DE006265E7 /* NRNRequestsManager.swift in Sources */,
+				BFB28E8E1E477E0C006265E7 /* NRNLocation.swift in Sources */,
+				BFB28E731E476369006265E7 /* NRNetworkConfiguration.swift in Sources */,
+				BFB28EC51E489504006265E7 /* NRHomeViewController.swift in Sources */,
+				BFB28EA91E47F105006265E7 /* NRNMedia.swift in Sources */,
+				BFB28E7F1E47698D006265E7 /* NRNLocationRoute.swift in Sources */,
+				BF19C6BB1E4AF3B300F85B96 /* NRDecorationCell.swift in Sources */,
+				BFB28E8A1E477B9A006265E7 /* NRNFetchLocationInformationService.swift in Sources */,
+				BFB28EB01E47FB4C006265E7 /* NRNSpotsRoute.swift in Sources */,
+				BFB28EC41E489484006265E7 /* NRPreparingViewController.swift in Sources */,
+				BFB28EB91E47FDA3006265E7 /* NRNAccess.swift in Sources */,
+				BFB28EA01E47EE70006265E7 /* NRNPhotosRouteTests.swift in Sources */,
+				BFB28ED11E48AA54006265E7 /* NRHomeSpotCell.swift in Sources */,
+				BFB28E911E477E95006265E7 /* NRNCity.swift in Sources */,
+				BFB28EC91E489ACB006265E7 /* NRMessageViewController.swift in Sources */,
+				BFB28ED01E48A9C1006265E7 /* NRHomeGalleryCell.swift in Sources */,
+				BFB28EA31E47EFE2006265E7 /* NRNFetchPhotosService.swift in Sources */,
+				BFB28ED21E48AAFA006265E7 /* NRHomeGalleryPhotoCell.swift in Sources */,
+				BFB28E9D1E47EDF6006265E7 /* NRNPhotosRoute.swift in Sources */,
+				BFB28EB61E47FBED006265E7 /* NRNSpot.swift in Sources */,
+				BFB28E971E47809C006265E7 /* NRParsingError.swift in Sources */,
+				BFB28E871E4779A8006265E7 /* NRNLocationRouteTests.swift in Sources */,
+				BF19C6C11E4B099500F85B96 /* NRUpdateRequireCell.swift in Sources */,
+				BFB28EAF1E47FB01006265E7 /* NRNSpotsRouteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +830,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZAA88TS93T;
 				INFOPLIST_FILE = near/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vc7.near;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +846,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZAA88TS93T;
 				INFOPLIST_FILE = near/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vc7.near;
 				PRODUCT_NAME = "$(TARGET_NAME)";
