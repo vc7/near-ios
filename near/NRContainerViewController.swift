@@ -23,7 +23,6 @@ class NRContainerViewController: UIViewController {
     var currentConstraints: [NSLayoutConstraint] = []
     var currentViewController: UIViewController? {
         willSet {
-            // TODO: remove old one
             if let viewController = currentViewController {
                 self.view.removeConstraints(self.currentConstraints)
                 self.currentConstraints = []
