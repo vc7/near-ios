@@ -22,6 +22,7 @@
                 <outlet property="nearByStationsLabel" destination="MCN-JO-cqP" id="hJE-Op-J3V"/>
                 <outlet property="prefectureLabel" destination="VyI-Ga-eDP" id="mFS-F7-Qtj"/>
                 <outlet property="tableView" destination="NaV-dj-Fn8" id="tyU-xF-pU5"/>
+                <outlet property="updateButton" destination="GRG-XI-ri7" id="WHa-z8-8xF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -84,7 +85,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="76.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gs-3s-wjQ">
-                                                    <rect key="frame" x="55" y="9" width="45" height="60"/>
+                                                    <rect key="frame" x="55" y="8.5" width="45" height="60"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                                     <color key="textColor" red="0.34509803919999998" green="0.43137254899999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -100,7 +101,7 @@
                                             <rect key="frame" x="0.0" y="76.5" width="100" height="38.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- / --" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcE-Q6-q3W">
-                                                    <rect key="frame" x="64" y="11.5" width="36" height="16"/>
+                                                    <rect key="frame" x="64" y="12" width="36" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.34509803919999998" green="0.43137254899999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -134,19 +135,37 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRG-XI-ri7">
+                    <rect key="frame" x="160.5" y="163" width="54" height="25"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="UzT-jK-kkQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="　更新　">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled" title="　読込中 ...　"/>
+                    <connections>
+                        <action selector="didSelectUpdateButton:" destination="-1" eventType="touchUpInside" id="9Pj-fH-OUn"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.9137254901960784" green="0.92156862745098034" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="rAj-pF-3Pu" firstAttribute="leading" secondItem="wbv-Ef-7pQ" secondAttribute="leading" id="4EI-db-qsE"/>
+                <constraint firstItem="wbv-Ef-7pQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="98q-7D-o8j"/>
                 <constraint firstItem="rAj-pF-3Pu" firstAttribute="top" secondItem="wbv-Ef-7pQ" secondAttribute="top" id="EZY-4w-Tn4"/>
                 <constraint firstAttribute="trailing" secondItem="NaV-dj-Fn8" secondAttribute="trailing" id="Npn-yX-Lfa"/>
                 <constraint firstItem="NaV-dj-Fn8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TuD-Ox-6qd"/>
+                <constraint firstItem="GRG-XI-ri7" firstAttribute="bottom" secondItem="wbv-Ef-7pQ" secondAttribute="bottom" constant="8" id="W91-2v-7xX"/>
                 <constraint firstItem="wbv-Ef-7pQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cJd-UA-oPC"/>
                 <constraint firstAttribute="bottom" secondItem="NaV-dj-Fn8" secondAttribute="bottom" id="f8v-nM-KEL"/>
                 <constraint firstItem="wbv-Ef-7pQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kIB-pJ-wP2"/>
                 <constraint firstItem="NaV-dj-Fn8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mgB-vU-h2J"/>
                 <constraint firstItem="rAj-pF-3Pu" firstAttribute="trailing" secondItem="wbv-Ef-7pQ" secondAttribute="trailing" id="peM-qY-jI6"/>
                 <constraint firstAttribute="trailing" secondItem="wbv-Ef-7pQ" secondAttribute="trailing" id="rXa-ni-LXR"/>
+                <constraint firstItem="GRG-XI-ri7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xV8-F6-HRq"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>

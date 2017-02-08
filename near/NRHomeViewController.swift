@@ -19,6 +19,7 @@ fileprivate enum NRHomeTableViewSection: Int {
 class NRHomeViewController: UIViewController {
     
     lazy internal var requestsManager = NRNRequestsManager.default
+    lazy internal var locationManagementCenter = NRLocationManagementCenter.default
     
     /// The main table view to hold data
     @IBOutlet internal weak var tableView: UITableView!
@@ -31,6 +32,13 @@ class NRHomeViewController: UIViewController {
     @IBOutlet internal weak var nearByStationsLabel: UILabel!
     @IBOutlet internal weak var currentTemperatureLabel: UILabel!
     @IBOutlet internal weak var additionInformationLabel: UILabel!
+    @IBOutlet internal weak var updateButton: UIButton! {
+        didSet {
+            updateButton.layer.cornerRadius = 2
+            updateButton.layer.borderColor = UIColor.white.cgColor
+            updateButton.layer.borderWidth = 1
+        }
+    }
     
     @IBOutlet internal weak var locationInformationHUDTopConstraint: NSLayoutConstraint!
     @IBOutlet internal weak var locationInformationHUDHeightConstraint: NSLayoutConstraint! {
@@ -95,6 +103,14 @@ class NRHomeViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    // MARK: - Button Actions
+    
+    @IBAction func didSelectUpdateButton(_ sender: UIButton) {
+        sender.isEnabled = false
+        sender.layoutIfNeeded()
+        self.locationManagementCenter.updateLocation()
     }
 }
 
@@ -171,6 +187,15 @@ extension NRHomeViewController: UITableViewDelegate {
             self.locationInformationHUD.alpha = alpha
             self.locationInformationHUDBackground.alpha = alpha
         }
+        
+        if contentOffsetY <= -self.locationInformationHUDHeight {
+            self.updateButton.alpha = 1
+        } else if contentOffsetY > -self.locationInformationHUDHeight + 50 {
+            self.updateButton.alpha = 0
+        } else {
+            let alpha = 1 - (self.locationInformationHUDHeight-(-contentOffsetY)) / 30
+            self.updateButton.alpha = alpha
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -236,6 +261,8 @@ extension NRHomeViewController {
             
             self.currentTemperatureLabel.text = location?.temperature?.current
             self.additionInformationLabel.text = "\(location?.temperature?.low ?? "--") / \(location?.temperature?.high ?? "--") °C"
+            
+            self.updateButton.isEnabled = true
             
             if let location = location {
                 
