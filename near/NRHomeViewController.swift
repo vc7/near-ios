@@ -13,6 +13,7 @@ fileprivate let kNRHomeSpotCellIdentifier = "NRHomeSpotCellIdentifier"
 fileprivate enum NRHomeTableViewSection: Int {
     case gallery = 0
     case spots = 1
+    case decoration = 2
 }
 
 class NRHomeViewController: UIViewController {
@@ -40,6 +41,7 @@ class NRHomeViewController: UIViewController {
     internal var locationInformationHUDHeight: CGFloat = 0
     
     internal let galleryCell = Bundle.main.loadNibNamed("NRHomeGalleryCell", owner: nil, options: nil)?.first as? NRHomeGalleryCell ?? NRHomeGalleryCell()
+    internal let decorationCell = Bundle.main.loadNibNamed("NRDecorationCell", owner: nil, options: nil)?.first as? NRDecorationCell ?? NRDecorationCell()
     
     // MARK: - Data
     
@@ -100,7 +102,7 @@ class NRHomeViewController: UIViewController {
 extension NRHomeViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -118,6 +120,8 @@ extension NRHomeViewController: UITableViewDataSource {
                 // TODO: Add placeholder view
                 return 0
             }
+        case .decoration:
+            return 1
         }
     }
     
@@ -142,6 +146,8 @@ extension NRHomeViewController: UITableViewDataSource {
             cell.spot = spot
             
             return cell
+        case .decoration:
+            return self.decorationCell
         }
     }
 }
@@ -177,6 +183,8 @@ extension NRHomeViewController: UITableViewDelegate {
             return NRHomeGalleryCell.defaultHeight
         case .spots:
             return NRHomeSpotCell.defaultHeight
+        case .decoration:
+            return 70
         }
     }
 }
