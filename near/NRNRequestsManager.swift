@@ -18,10 +18,13 @@ extension Notification.Name {
 class NRNRequestsManager: NSObject {
     
     lazy internal var containerViewControllerManager = NRContainerViewControllerManager.default
+    lazy internal var sharedApplication = UIApplication.shared
     
     /// The location information used for request data.
     var coordinate: CLLocationCoordinate2D? {
         didSet {
+            self.sharedApplication.isNetworkActivityIndicatorVisible = true
+            
             self.updateLocationInformation()
             self.updatePhotos()
             self.updateSpots()
@@ -69,6 +72,7 @@ class NRNRequestsManager: NSObject {
                     break
                 }
                 
+                self.sharedApplication.isNetworkActivityIndicatorVisible = false
             })
         } else {
             // TODO: deal with no coordinate.

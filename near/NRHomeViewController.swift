@@ -13,11 +13,13 @@ fileprivate let kNRHomeSpotCellIdentifier = "NRHomeSpotCellIdentifier"
 fileprivate enum NRHomeTableViewSection: Int {
     case gallery = 0
     case spots = 1
+    case decoration = 2
 }
 
 class NRHomeViewController: UIViewController {
     
     lazy internal var requestsManager = NRNRequestsManager.default
+    lazy internal var locationManagementCenter = NRLocationManagementCenter.default
     
     /// The main table view to hold data
     @IBOutlet internal weak var tableView: UITableView!
@@ -30,6 +32,13 @@ class NRHomeViewController: UIViewController {
     @IBOutlet internal weak var nearByStationsLabel: UILabel!
     @IBOutlet internal weak var currentTemperatureLabel: UILabel!
     @IBOutlet internal weak var additionInformationLabel: UILabel!
+    @IBOutlet internal weak var updateButton: UIButton! {
+        didSet {
+            updateButton.layer.cornerRadius = 2
+            updateButton.layer.borderColor = UIColor.white.cgColor
+            updateButton.layer.borderWidth = 1
+        }
+    }
     
     @IBOutlet internal weak var locationInformationHUDTopConstraint: NSLayoutConstraint!
     @IBOutlet internal weak var locationInformationHUDHeightConstraint: NSLayoutConstraint! {
@@ -40,6 +49,8 @@ class NRHomeViewController: UIViewController {
     internal var locationInformationHUDHeight: CGFloat = 0
     
     internal let galleryCell = Bundle.main.loadNibNamed("NRHomeGalleryCell", owner: nil, options: nil)?.first as? NRHomeGalleryCell ?? NRHomeGalleryCell()
+    internal lazy var galleryPlaceholderCell: NRUpdateRequireCell? = Bundle.main.loadNibNamed("NRUpdateRequireCell", owner: nil, options: nil)?.first as? NRUpdateRequireCell ?? NRUpdateRequireCell()
+    internal let decorationCell = Bundle.main.loadNibNamed("NRDecorationCell", owner: nil, options: nil)?.first as? NRDecorationCell ?? NRDecorationCell()
     
     // MARK: - Data
     
@@ -94,13 +105,21 @@ class NRHomeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    // MARK: - Button Actions
+    
+    @IBAction func didSelectUpdateButton(_ sender: UIButton) {
+        sender.isEnabled = false
+        sender.layoutIfNeeded()
+        self.locationManagementCenter.updateLocation()
+    }
 }
 
 // MARK: - UITableViewDataSource
 extension NRHomeViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -118,6 +137,8 @@ extension NRHomeViewController: UITableViewDataSource {
                 // TODO: Add placeholder view
                 return 0
             }
+        case .decoration:
+            return 1
         }
     }
     
@@ -129,10 +150,10 @@ extension NRHomeViewController: UITableViewDataSource {
         switch currentSection {
         case .gallery:
             if self.photos != nil {
+                self.galleryPlaceholderCell = nil
                 return self.galleryCell
             } else {
-                // TODO: Add placeholder view
-                return UITableViewCell()
+                return self.galleryPlaceholderCell ?? UITableViewCell()
             }
         case .spots:
             
@@ -142,6 +163,8 @@ extension NRHomeViewController: UITableViewDataSource {
             cell.spot = spot
             
             return cell
+        case .decoration:
+            return self.decorationCell
         }
     }
 }
@@ -165,6 +188,15 @@ extension NRHomeViewController: UITableViewDelegate {
             self.locationInformationHUD.alpha = alpha
             self.locationInformationHUDBackground.alpha = alpha
         }
+        
+        if contentOffsetY <= -self.locationInformationHUDHeight {
+            self.updateButton.alpha = 1
+        } else if contentOffsetY > -self.locationInformationHUDHeight + 50 {
+            self.updateButton.alpha = 0
+        } else {
+            let alpha = 1 - (self.locationInformationHUDHeight-(-contentOffsetY)) / 30
+            self.updateButton.alpha = alpha
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -177,6 +209,8 @@ extension NRHomeViewController: UITableViewDelegate {
             return NRHomeGalleryCell.defaultHeight
         case .spots:
             return NRHomeSpotCell.defaultHeight
+        case .decoration:
+            return 70
         }
     }
 }
@@ -229,9 +263,9 @@ extension NRHomeViewController {
             self.currentTemperatureLabel.text = location?.temperature?.current
             self.additionInformationLabel.text = "\(location?.temperature?.low ?? "--") / \(location?.temperature?.high ?? "--") °C"
             
-            if let location = location {
-                
-            } else {
+            self.updateButton.isEnabled = true
+            
+            if location == nil {
                 // TODO: Add reload.
             }
         }
