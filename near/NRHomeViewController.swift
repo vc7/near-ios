@@ -128,8 +128,7 @@ extension NRHomeViewController: UITableViewDataSource {
         
         switch currentSection {
         case .gallery:
-            if let photos = self.photos {
-                // TODO: set photos to gallery cell
+            if self.photos != nil {
                 return self.galleryCell
             } else {
                 // TODO: Add placeholder view
