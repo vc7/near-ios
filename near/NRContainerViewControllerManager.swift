@@ -51,7 +51,12 @@ extension NRContainerViewControllerManager {
         }
     }
     
-    func presentMessageViewController(with failure: NRFailure) {
+    func presentMessageViewControllerIfNeeded(with failure: NRFailure) {
+        if self.containerViewController.status == .normal {
+            // TODO: Show the bottom hud of home view.
+            return
+        }
+        
         DispatchQueue.main.async {
             self.containerViewController.loadViewIfNeeded()
             let messageViewController = NRMessageViewController()

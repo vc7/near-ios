@@ -63,7 +63,7 @@ class NRNRequestsManager: NSObject {
                 case .failure(let error):
                     
                     if (error as? URLError)?.code == .notConnectedToInternet {
-                        self.containerViewControllerManager.presentMessageViewController(with: .offlineFailure)
+                        self.containerViewControllerManager.presentMessageViewControllerIfNeeded(with: .offlineFailure)
                     }
                     
                     break
@@ -89,7 +89,7 @@ class NRNRequestsManager: NSObject {
                 case .failure(let error):
                     
                     if (error as? URLError)?.code == .notConnectedToInternet {
-                        self.containerViewControllerManager.presentMessageViewController(with: .offlineFailure)
+                        self.containerViewControllerManager.presentMessageViewControllerIfNeeded(with: .offlineFailure)
                     }
                     
                     break
@@ -115,7 +115,7 @@ class NRNRequestsManager: NSObject {
                 case .failure(let error):
                     
                     if (error as? URLError)?.code == .notConnectedToInternet {
-                        self.containerViewControllerManager.presentMessageViewController(with: .offlineFailure)
+                        self.containerViewControllerManager.presentMessageViewControllerIfNeeded(with: .offlineFailure)
                     }
                     
                     break
