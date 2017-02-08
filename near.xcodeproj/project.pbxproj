@@ -13,6 +13,10 @@
 		BF19C6BB1E4AF3B300F85B96 /* NRDecorationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C6B81E4AF3B300F85B96 /* NRDecorationCell.swift */; };
 		BF19C6BC1E4AF3B300F85B96 /* NRDecorationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF19C6B91E4AF3B300F85B96 /* NRDecorationCell.xib */; };
 		BF19C6BD1E4AF3B300F85B96 /* NRDecorationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF19C6B91E4AF3B300F85B96 /* NRDecorationCell.xib */; };
+		BF19C6C01E4B099500F85B96 /* NRUpdateRequireCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C6BE1E4B099500F85B96 /* NRUpdateRequireCell.swift */; };
+		BF19C6C11E4B099500F85B96 /* NRUpdateRequireCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C6BE1E4B099500F85B96 /* NRUpdateRequireCell.swift */; };
+		BF19C6C21E4B099500F85B96 /* NRUpdateRequireCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF19C6BF1E4B099500F85B96 /* NRUpdateRequireCell.xib */; };
+		BF19C6C31E4B099500F85B96 /* NRUpdateRequireCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF19C6BF1E4B099500F85B96 /* NRUpdateRequireCell.xib */; };
 		BF2AAFCD1E44BD7100A2C7D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AAFCC1E44BD7100A2C7D0 /* AppDelegate.swift */; };
 		BF2AAFD41E44BD7100A2C7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2AAFD31E44BD7100A2C7D0 /* Assets.xcassets */; };
 		BF2AAFD71E44BD7100A2C7D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2AAFD51E44BD7100A2C7D0 /* LaunchScreen.storyboard */; };
@@ -105,6 +109,8 @@
 		AF30B22D069440D5B37D3A44 /* Pods-near.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-near.release.xcconfig"; path = "Pods/Target Support Files/Pods-near/Pods-near.release.xcconfig"; sourceTree = "<group>"; };
 		BF19C6B81E4AF3B300F85B96 /* NRDecorationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRDecorationCell.swift; sourceTree = "<group>"; };
 		BF19C6B91E4AF3B300F85B96 /* NRDecorationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRDecorationCell.xib; sourceTree = "<group>"; };
+		BF19C6BE1E4B099500F85B96 /* NRUpdateRequireCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRUpdateRequireCell.swift; sourceTree = "<group>"; };
+		BF19C6BF1E4B099500F85B96 /* NRUpdateRequireCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRUpdateRequireCell.xib; sourceTree = "<group>"; };
 		BF2AAFC91E44BD7100A2C7D0 /* near.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = near.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2AAFCC1E44BD7100A2C7D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF2AAFD31E44BD7100A2C7D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -253,6 +259,8 @@
 				BF2AB0281E47112100A2C7D0 /* NRHomeSpotCell.xib */,
 				BF19C6B81E4AF3B300F85B96 /* NRDecorationCell.swift */,
 				BF19C6B91E4AF3B300F85B96 /* NRDecorationCell.xib */,
+				BF19C6BE1E4B099500F85B96 /* NRUpdateRequireCell.swift */,
+				BF19C6BF1E4B099500F85B96 /* NRUpdateRequireCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -505,6 +513,7 @@
 				BF2AB02A1E47112100A2C7D0 /* NRHomeSpotCell.xib in Resources */,
 				BF19C6BC1E4AF3B300F85B96 /* NRDecorationCell.xib in Resources */,
 				BF2AB0261E47061C00A2C7D0 /* NRHomeGalleryPhotoCell.xib in Resources */,
+				BF19C6C21E4B099500F85B96 /* NRUpdateRequireCell.xib in Resources */,
 				BF2AB01D1E45CD3300A2C7D0 /* NRHomeViewController.xib in Resources */,
 				BFB28E6C1E47361B006265E7 /* NRLocationRequestExplanationViewController.xib in Resources */,
 				BF2AAFD71E44BD7100A2C7D0 /* LaunchScreen.storyboard in Resources */,
@@ -520,6 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFB28ECB1E489ACB006265E7 /* NRMessageViewController.xib in Resources */,
+				BF19C6C31E4B099500F85B96 /* NRUpdateRequireCell.xib in Resources */,
 				BF19C6BD1E4AF3B300F85B96 /* NRDecorationCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,6 +664,7 @@
 				BFB28ECD1E489F38006265E7 /* NRContainerViewControllerManager.swift in Sources */,
 				BFB28E6B1E47361B006265E7 /* NRLocationRequestExplanationViewController.swift in Sources */,
 				BF19C6BA1E4AF3B300F85B96 /* NRDecorationCell.swift in Sources */,
+				BF19C6C01E4B099500F85B96 /* NRUpdateRequireCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,6 +705,7 @@
 				BFB28EB61E47FBED006265E7 /* NRNSpot.swift in Sources */,
 				BFB28E971E47809C006265E7 /* NRParsingError.swift in Sources */,
 				BFB28E871E4779A8006265E7 /* NRNLocationRouteTests.swift in Sources */,
+				BF19C6C11E4B099500F85B96 /* NRUpdateRequireCell.swift in Sources */,
 				BFB28EAF1E47FB01006265E7 /* NRNSpotsRouteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

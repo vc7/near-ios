@@ -49,6 +49,7 @@ class NRHomeViewController: UIViewController {
     internal var locationInformationHUDHeight: CGFloat = 0
     
     internal let galleryCell = Bundle.main.loadNibNamed("NRHomeGalleryCell", owner: nil, options: nil)?.first as? NRHomeGalleryCell ?? NRHomeGalleryCell()
+    internal lazy var galleryPlaceholderCell: NRUpdateRequireCell? = Bundle.main.loadNibNamed("NRUpdateRequireCell", owner: nil, options: nil)?.first as? NRUpdateRequireCell ?? NRUpdateRequireCell()
     internal let decorationCell = Bundle.main.loadNibNamed("NRDecorationCell", owner: nil, options: nil)?.first as? NRDecorationCell ?? NRDecorationCell()
     
     // MARK: - Data
@@ -149,10 +150,10 @@ extension NRHomeViewController: UITableViewDataSource {
         switch currentSection {
         case .gallery:
             if self.photos != nil {
+                self.galleryPlaceholderCell = nil
                 return self.galleryCell
             } else {
-                // TODO: Add placeholder view
-                return UITableViewCell()
+                return self.galleryPlaceholderCell ?? UITableViewCell()
             }
         case .spots:
             
@@ -264,9 +265,7 @@ extension NRHomeViewController {
             
             self.updateButton.isEnabled = true
             
-            if let location = location {
-                
-            } else {
+            if location == nil {
                 // TODO: Add reload.
             }
         }

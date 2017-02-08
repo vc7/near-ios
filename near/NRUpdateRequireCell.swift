@@ -1,5 +1,5 @@
 //
-//  NRDecorationCell.swift
+//  NRUpdateRequireCell.swift
 //  near
 //
 //  Created by vincent on 2017/02/08.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NRDecorationCell: UITableViewCell {
+class NRUpdateRequireCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
