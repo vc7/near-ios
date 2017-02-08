@@ -128,8 +128,7 @@ extension NRHomeViewController: UITableViewDataSource {
         
         switch currentSection {
         case .gallery:
-            if let photos = self.photos {
-                // TODO: set photos to gallery cell
+            if self.photos != nil {
                 return self.galleryCell
             } else {
                 // TODO: Add placeholder view
@@ -228,7 +227,7 @@ extension NRHomeViewController {
             self.nearByStationsLabel.text = "最寄駅 - " + formattedStationNames
             
             self.currentTemperatureLabel.text = location?.temperature?.current
-            self.additionInformationLabel.text = "\(location?.temperature?.low ?? "--") / \(location?.temperature?.high ?? "--")"
+            self.additionInformationLabel.text = "\(location?.temperature?.low ?? "--") / \(location?.temperature?.high ?? "--") °C"
             
             if let location = location {
                 

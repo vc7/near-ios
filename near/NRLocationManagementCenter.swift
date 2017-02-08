@@ -76,7 +76,7 @@ extension NRLocationManagementCenter {
             self.updateLocation()
             break
         case .denied, .restricted:
-            self.containerViewControllerManager.presentMessageViewController(with: .withoutAuthorization)
+            self.containerViewControllerManager.presentMessageViewControllerIfNeeded(with: .withoutAuthorization)
             break
         default:
             break

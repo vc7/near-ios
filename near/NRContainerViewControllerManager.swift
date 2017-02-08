@@ -15,7 +15,14 @@ enum NRFailure: Error {
     case offlineFailure
     
     var localizedDescription: String {
-        return "default description"
+        switch self {
+        case .withoutAuthorization, .withoutLocationService:
+            return "このアプリは、GPS データが必要なんです。「設定」でオンしてくださいね。"
+        case .fetchingLocationFailure:
+            return "位置情報ゲット失敗しちゃった、「リロード」を押す、もう一度ゲットしてみてくださいね。"
+        case .offlineFailure:
+            return "やばい、通信出来ない。ちょっとチェックしてみてくださいね。"
+        }
     }
 }
 
@@ -44,7 +51,12 @@ extension NRContainerViewControllerManager {
         }
     }
     
-    func presentMessageViewController(with failure: NRFailure) {
+    func presentMessageViewControllerIfNeeded(with failure: NRFailure) {
+        if self.containerViewController.status == .normal {
+            // TODO: Show the bottom hud of home view.
+            return
+        }
+        
         DispatchQueue.main.async {
             self.containerViewController.loadViewIfNeeded()
             let messageViewController = NRMessageViewController()
